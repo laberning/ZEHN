@@ -1,0 +1,57 @@
+name: Etwas funktioniert nicht
+description: Ein Fehler im Spiel, etwas hängt, sieht falsch aus oder reagiert nicht.
+title: "Fehler: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass du uns hilfst! Schreib auf Deutsch, so wie du magst. Nicht alle Felder müssen perfekt sein.
+
+        **Bitte schick uns keine Spielstände und keine persönlichen Daten** (keinen echten Namen, keine Adresse, keine Fotos). Wenn wir etwas aus deiner Akte brauchen, fragen wir nach.
+  - type: dropdown
+    id: ort
+    attributes:
+      label: Wo im Spiel ist es passiert?
+      options:
+        - Startseite
+        - Hauptquartier
+        - Auftrag (Tippen üben)
+        - Agentenfunk
+        - Einsatz
+        - Spielhalle
+        - Garderobe
+        - Extra-Fall
+        - Bennos Tippstunde
+        - Woanders oder weiß nicht
+    validations:
+      required: false
+  - type: textarea
+    id: gemacht
+    attributes:
+      label: Was hast du gemacht?
+      description: Was hast du kurz vorher getippt oder angeklickt?
+      placeholder: Ich war in Akt 2 im Auftrag auf den Dächern und habe ein Ü getippt …
+    validations:
+      required: true
+  - type: textarea
+    id: passiert
+    attributes:
+      label: Was ist passiert?
+      description: Ein Bildschirmfoto hilft oft. Achte darauf, dass kein echter Name darauf steht.
+    validations:
+      required: true
+  - type: textarea
+    id: erwartet
+    attributes:
+      label: Was hast du stattdessen erwartet?
+    validations:
+      required: false
+  - type: input
+    id: geraet
+    attributes:
+      label: Browser und Gerät
+      description: Das hilft uns beim Nachstellen.
+      placeholder: z. B. Chrome auf einem Chromebook, Firefox auf Windows, Safari auf einem iPad mit Tastatur
+    validations:
+      required: false

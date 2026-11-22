@@ -1,0 +1,106 @@
+/* Fallakte: Aktenmappe mit Stempeln GELÖST / OFFEN und den Ständen der Verdächtigen */
+
+.fallakte {
+  max-width: 720px;
+}
+.fa-header {
+  font-style: italic;
+  margin: 0 0 12px;
+}
+.fa-folder {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+}
+.fa-folder h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.fa-folder ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.fa-folder li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+/* Das Bild ist klein; ohne Bild bleibt der Platz leer, damit die Texte untereinander stehen */
+.fa-pic {
+  flex: none;
+  width: 96px;
+}
+.fa-pic .story-pic {
+  width: 72px;
+  height: auto;
+}
+/* Bilder mit Bildart: ganzzahlige Vielfache der Rasterbreite (ui/pixel/pictureKinds.ts) */
+.fa-pic .story-pic.pic-evidence {
+  width: 96px; /* 3 × 32 */
+}
+.fa-pic .story-pic.pic-gadget {
+  width: 64px; /* 4 × 16: Porträt eines Verdächtigen */
+}
+.fa-pic .story-pic.pic-object {
+  width: 64px; /* 1 × 64 */
+}
+.fa-pic .story-pic.pic-panorama {
+  width: 96px; /* 1 × 96 */
+}
+.fa-text .goldcard {
+  max-width: 280px;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+.fa-stamp {
+  font-family: var(--pixel);
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border: 2px solid currentColor;
+  border-radius: 3px;
+  transform: rotate(-4deg);
+}
+.fa-stamp.solved {
+  color: var(--green);
+}
+.fa-stamp.open {
+  color: var(--yellow);
+}
+.fa-stamp.verdaechtig {
+  color: var(--yellow);
+}
+.fa-stamp.gesucht {
+  color: var(--red);
+}
+.fa-stamp.entlastet,
+.fa-stamp.ueberfuehrt {
+  color: var(--green);
+}
+.fa-suspect,
+.fa-hit {
+  margin: 2px 0 0;
+}
+/* Treffer des Kindes: abgesetzt als seine eigene Zeile */
+.fa-hit {
+  border-left: 3px solid var(--green);
+  padding-left: 8px;
+  font-size: 0.9rem;
+}
+.fa-hit span {
+  font-weight: bold;
+  color: var(--green);
+}
+
+/* zerkratzte Akte: statt der Zeilen nur Kratzer */
+.fa-scratched .fa-text {
+  letter-spacing: 0.15em;
+  opacity: 0.55;
+  user-select: none;
+}

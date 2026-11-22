@@ -1,0 +1,61 @@
+{
+  "name": "zehn",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "playwright test --project=chromium",
+    "typecheck": "tsc -b",
+    "lint": "eslint . --max-warnings 0",
+    "assets:lpc": "node scripts/lpc/build.ts",
+    "ids": "node scripts/ids/update.ts",
+    "e2e:fixture": "node scripts/e2e/fixtures.ts",
+    "pictures:sheet": "node scripts/pictures/sheet.ts",
+    "test:coverage": "vitest run --coverage",
+    "e2e:firefox": "playwright test --project=firefox",
+    "check": "tsc -b && eslint . --max-warnings 0 && vitest run --coverage"
+  },
+  "dependencies": {
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@fontsource/silkscreen": "^5.3.0",
+    "dexie": "^4.4.7",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.65.0",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.8",
+    "@types/node": "^26.6.6",
+    "@types/pngjs": "^6.0.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "@vitest/coverage-v8": "^5.1.0",
+    "eslint": "^10.14.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "fake-indexeddb": "^6.2.8",
+    "globals": "^17.14.0",
+    "happy-dom": "^21.0.4",
+    "jiti": "^2.7.0",
+    "pngjs": "^7.0.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^8.3.6",
+    "vitest": "^5.1.0"
+  }
+}

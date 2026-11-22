@@ -1,0 +1,26 @@
+/* LPC-Figuren (Canvas): Pixel-Darstellung und Hintergründe je nach Einsatzort */
+
+canvas.lpc {
+  image-rendering: pixelated;
+  display: block;
+}
+.villain canvas.lpc,
+.villain svg.loudspeaker {
+  background: radial-gradient(circle at 50% 40%, #24305a, #141c31 70%);
+  border-radius: 8px;
+  border: 2px solid #8b1e2f;
+  box-shadow: 0 0 20px rgba(200, 30, 60, 0.35);
+  padding: 2px;
+}
+.akte-head canvas.lpc {
+  background: #d8cba8;
+  border-radius: 6px;
+}
+.id-card canvas.lpc {
+  background: radial-gradient(circle at 50% 45%, rgba(46, 230, 255, 0.18), transparent 70%);
+}
+.hq-head canvas.lpc,
+.profile-card canvas.lpc {
+  background: radial-gradient(circle at 50% 40%, #24305a, transparent 75%);
+  border-radius: 10px;
+}

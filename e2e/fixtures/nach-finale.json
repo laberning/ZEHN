@@ -1,0 +1,3403 @@
+{
+ "app": "zehn",
+ "format": 1,
+ "exportedAt": "2026-10-08T13:00:00.000Z",
+ "profile": {
+  "id": "p1",
+  "firstName": "Lena",
+  "codename": "Vektor-07",
+  "avatar": {
+   "gender": "w",
+   "skin": "light",
+   "hairStyle": "long",
+   "hairColor": "dark_brown",
+   "eyeColor": "blue",
+   "outfit": "tshirt",
+   "outfitColor": "blue",
+   "pants": "jeans",
+   "pantsColor": "navy",
+   "shoes": "shoes",
+   "shoesColor": "black",
+   "glasses": "none",
+   "head": "none",
+   "headColor": "blue",
+   "accessory": "none",
+   "accessoryColor": "blue"
+  },
+  "schema": 1,
+  "createdAt": 1790859600000,
+  "xp": 3894,
+  "stats": {
+   "0": {
+    "samples": 202,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 199
+   },
+   "1": {
+    "samples": 197,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 193
+   },
+   "2": {
+    "samples": 205,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 198
+   },
+   "3": {
+    "samples": 249,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 247
+   },
+   "4": {
+    "samples": 254,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 253
+   },
+   "5": {
+    "samples": 256,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 254
+   },
+   "6": {
+    "samples": 283,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 276
+   },
+   "7": {
+    "samples": 293,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 289
+   },
+   "8": {
+    "samples": 245,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 243
+   },
+   "9": {
+    "samples": 168,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 164
+   },
+   "f": {
+    "samples": 1187,
+    "accuracy": 1,
+    "avgMs": 120.34069490092998,
+    "timedSamples": 1178
+   },
+   "j": {
+    "samples": 761,
+    "accuracy": 1,
+    "avgMs": 121.5747178366889,
+    "timedSamples": 758
+   },
+   " ": {
+    "samples": 6586,
+    "accuracy": 1,
+    "avgMs": 120.00000000000009,
+    "timedSamples": 6586
+   },
+   "k": {
+    "samples": 1041,
+    "accuracy": 1,
+    "avgMs": 120.3181059595232,
+    "timedSamples": 1040
+   },
+   "d": {
+    "samples": 1072,
+    "accuracy": 1,
+    "avgMs": 120.85252238037917,
+    "timedSamples": 1069
+   },
+   "l": {
+    "samples": 2172,
+    "accuracy": 1,
+    "avgMs": 120.00085403860002,
+    "timedSamples": 2168
+   },
+   "s": {
+    "samples": 1993,
+    "accuracy": 1,
+    "avgMs": 120.01213028130472,
+    "timedSamples": 1987
+   },
+   "ö": {
+    "samples": 523,
+    "accuracy": 1,
+    "avgMs": 121.33418057722933,
+    "timedSamples": 522
+   },
+   "a": {
+    "samples": 2324,
+    "accuracy": 1,
+    "avgMs": 120.00020695244652,
+    "timedSamples": 2313
+   },
+   "h": {
+    "samples": 1058,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 1054
+   },
+   "g": {
+    "samples": 839,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 833
+   },
+   "ä": {
+    "samples": 376,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 372
+   },
+   "e": {
+    "samples": 2385,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 2385
+   },
+   "i": {
+    "samples": 1101,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 1100
+   },
+   "r": {
+    "samples": 1351,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 1347
+   },
+   "u": {
+    "samples": 823,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 821
+   },
+   "t": {
+    "samples": 1417,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 1415
+   },
+   "z": {
+    "samples": 414,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 412
+   },
+   "w": {
+    "samples": 358,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 354
+   },
+   "o": {
+    "samples": 754,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 754
+   },
+   "q": {
+    "samples": 262,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 260
+   },
+   "p": {
+    "samples": 506,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 506
+   },
+   "ü": {
+    "samples": 404,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 404
+   },
+   "n": {
+    "samples": 810,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 806
+   },
+   "m": {
+    "samples": 547,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 544
+   },
+   ",": {
+    "samples": 436,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 436
+   },
+   "c": {
+    "samples": 471,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 470
+   },
+   "v": {
+    "samples": 253,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 251
+   },
+   ".": {
+    "samples": 421,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 421
+   },
+   "-": {
+    "samples": 364,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 364
+   },
+   "b": {
+    "samples": 397,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 394
+   },
+   "x": {
+    "samples": 211,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 211
+   },
+   "y": {
+    "samples": 218,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 218
+   },
+   "shift-right": {
+    "samples": 655,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 652
+   },
+   "shift-left": {
+    "samples": 465,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 458
+   },
+   "ß": {
+    "samples": 257,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 255
+   },
+   "umlaute-gross": {
+    "samples": 60,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 58
+   },
+   "!": {
+    "samples": 279,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 279
+   },
+   "?": {
+    "samples": 296,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 296
+   },
+   ";": {
+    "samples": 313,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 313
+   },
+   ":": {
+    "samples": 289,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 289
+   },
+   "\"": {
+    "samples": 198,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 194
+   },
+   "'": {
+    "samples": 76,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 76
+   },
+   "€": {
+    "samples": 212,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 212
+   },
+   "@": {
+    "samples": 159,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 159
+   },
+   "[": {
+    "samples": 83,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 83
+   },
+   "]": {
+    "samples": 83,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 83
+   },
+   "{": {
+    "samples": 67,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 64
+   },
+   "}": {
+    "samples": 67,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 67
+   },
+   "~": {
+    "samples": 103,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 103
+   },
+   "\\": {
+    "samples": 104,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 96
+   },
+   "|": {
+    "samples": 126,
+    "accuracy": 1,
+    "avgMs": 120,
+    "timedSamples": 126
+   }
+  },
+  "latches": {
+   "0": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "1": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "2": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "3": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "4": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "5": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "6": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "7": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "8": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "9": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "f": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "j": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "d": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "k": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "s": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "l": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "a": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "ö": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "g": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "h": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "ä": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "e": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "i": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "r": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "u": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "t": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "z": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "w": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "o": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "q": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "p": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "ü": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "n": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "m": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "c": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   ",": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "v": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   ".": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "b": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "-": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "x": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "y": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "shift-right": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "shift-left": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "ß": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "umlaute-gross": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "?": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "!": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   ":": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   ";": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "\"": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "'": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "@": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "€": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "{": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "[": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "]": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "}": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "\\": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "~": [
+    "training",
+    "precision",
+    "tempo"
+   ],
+   "|": [
+    "training",
+    "precision",
+    "tempo"
+   ]
+  },
+  "lessons": {
+   "m1-l1": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m1-l2": {
+    "exercises": 2,
+    "bestStars": 2,
+    "mastered": true,
+    "best": 1
+   },
+   "m1-l3": {
+    "exercises": 2,
+    "bestStars": 2,
+    "mastered": true,
+    "best": 1
+   },
+   "m1-l4": {
+    "exercises": 2,
+    "bestStars": 2,
+    "mastered": true,
+    "best": 1
+   },
+   "m1-l5": {
+    "exercises": 2,
+    "bestStars": 2,
+    "mastered": true,
+    "best": 1
+   },
+   "m1-l6": {
+    "exercises": 2,
+    "bestStars": 2,
+    "mastered": true,
+    "best": 1
+   },
+   "m2-l1": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m2-l2": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m2-l3": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m2-l4": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m2-l5": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m2-l6": {
+    "exercises": 2,
+    "bestStars": 2,
+    "mastered": true,
+    "best": 1
+   },
+   "m3-l1": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m3-l2": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m3-l3": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m3-l4": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m3-l5": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m4-l1": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m4-l2": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m4-l3": {
+    "exercises": 4,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m4-l4": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m5-l1": {
+    "exercises": 4,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m5-l2": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m5-l3": {
+    "exercises": 4,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m6-l1": {
+    "exercises": 4,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m6-l2": {
+    "exercises": 4,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m6-l3": {
+    "exercises": 2,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m6-l4": {
+    "exercises": 2,
+    "bestStars": 2,
+    "mastered": true,
+    "best": 1
+   },
+   "m7-l1": {
+    "exercises": 12,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   },
+   "m7-l2": {
+    "exercises": 4,
+    "bestStars": 2,
+    "mastered": true,
+    "best": 1
+   },
+   "m7-l3": {
+    "exercises": 12,
+    "bestStars": 3,
+    "mastered": true,
+    "best": 1
+   }
+  },
+  "exams": {
+   "m1": {
+    "attempts": 4,
+    "outcome": "passed",
+    "usedBackdoor": true
+   },
+   "m2": {
+    "attempts": 4,
+    "outcome": "passed",
+    "usedBackdoor": true
+   },
+   "m3": {
+    "attempts": 4,
+    "outcome": "passed",
+    "usedBackdoor": true
+   },
+   "m4": {
+    "attempts": 4,
+    "outcome": "passed",
+    "usedBackdoor": true
+   },
+   "m5": {
+    "attempts": 4,
+    "outcome": "passed",
+    "usedBackdoor": true
+   },
+   "m6": {
+    "attempts": 4,
+    "outcome": "passed",
+    "usedBackdoor": true
+   },
+   "m7": {
+    "attempts": 4,
+    "outcome": "passed",
+    "usedBackdoor": true
+   }
+  },
+  "badges": {
+   "erster-auftrag": 1790946000000,
+   "tempo-60": 1790946000000,
+   "tempo-100": 1790946000000,
+   "tastsinn": 1790946000000,
+   "sauber-100": 1790946000000,
+   "entschluesselt": 1790946000000,
+   "sterne-12": 1790946000000,
+   "grundreihe": 1790946000000,
+   "null-fehler": 1790946000000,
+   "ehrenkodex": 1790946000000,
+   "uebungen-25": 1791032400000,
+   "drei-sterne": 1791032400000,
+   "obere-reihe": 1791032400000,
+   "serie-3": 1791118800000,
+   "untere-reihe": 1791118800000,
+   "grossschreibung": 1791205200000,
+   "satzzeichen": 1791291600000,
+   "zahlen": 1791378000000,
+   "serie-7": 1791464400000,
+   "sonderzeichen": 1791464400000
+  },
+  "days": {
+   "count": 7,
+   "lastDay": "2026-10-08"
+  },
+  "history": [
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 40
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 404
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l2",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 171
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 401
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 405
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l3",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 171
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 400
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 401
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l4",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 172
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l4",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 403
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l4",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 405
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l5",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 168
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l5",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 405
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l5",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 402
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l6",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 170
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l6",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 402
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l6",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 402
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l6",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l6",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l6",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1790946000000,
+    "lessonId": "m1-l6",
+    "kind": "exam",
+    "apm": 300,
+    "accuracy": 1,
+    "chars": 14
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l1",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 110
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 334
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 330
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l2",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 111
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 335
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 331
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l3",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 111
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 332
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 333
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l4",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 110
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l4",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 332
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l4",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 380
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l5",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 144
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l5",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 401
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l5",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 404
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l6",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 169
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l6",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 403
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l6",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 401
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l6",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l6",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l6",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791032400000,
+    "lessonId": "m2-l6",
+    "kind": "exam",
+    "apm": 300,
+    "accuracy": 1,
+    "chars": 14
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l1",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 110
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 330
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 330
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l2",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 111
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 334
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 335
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l3",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 114
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 334
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 336
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l4",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 112
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l4",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 330
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l4",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 385
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l5",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 144
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l5",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 402
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l5",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 404
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l5",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l5",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l5",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791118800000,
+    "lessonId": "m3-l5",
+    "kind": "exam",
+    "apm": 300,
+    "accuracy": 1,
+    "chars": 14
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l1",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 116
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 332
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 336
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l2",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 115
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 330
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 332
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l3",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 115
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 341
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 332
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l3",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 115
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 333
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 381
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l4",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 147
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l4",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 400
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l4",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 406
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l4",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l4",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l4",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791205200000,
+    "lessonId": "m4-l4",
+    "kind": "exam",
+    "apm": 300,
+    "accuracy": 1,
+    "chars": 14
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l1",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 111
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 332
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 335
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l1",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 114
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 334
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 332
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l2",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 110
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 331
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 336
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l3",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 113
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 333
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 383
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l3",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 146
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 408
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 401
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l3",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l3",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l3",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791291600000,
+    "lessonId": "m5-l3",
+    "kind": "exam",
+    "apm": 300,
+    "accuracy": 1,
+    "chars": 14
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l1",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 110
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 336
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 333
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l1",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 111
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 335
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 332
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l2",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 114
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 334
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 332
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l2",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 110
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 332
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 381
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l3",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 148
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 401
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 401
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l4",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 168
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l4",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 400
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l4",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 403
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l4",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l4",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l4",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791378000000,
+    "lessonId": "m6-l4",
+    "kind": "exam",
+    "apm": 300,
+    "accuracy": 1,
+    "chars": 14
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 114
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 330
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 335
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 112
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 336
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 331
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 111
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 332
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 332
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 113
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 331
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 382
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 144
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 404
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 406
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 171
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 401
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l1",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 400
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l2",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 170
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 400
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 400
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l2",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 170
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 401
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l2",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 401
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 169
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 403
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 401
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 168
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 400
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 404
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exam",
+    "apm": 0,
+    "accuracy": 0,
+    "chars": 14
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exam",
+    "apm": 300,
+    "accuracy": 1,
+    "chars": 14
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 116
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 337
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 331
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 113
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 331
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 333
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 111
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 334
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 335
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "warmup",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 110
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 334
+   },
+   {
+    "t": 1791464400000,
+    "lessonId": "m7-l3",
+    "kind": "exercise",
+    "apm": 500,
+    "accuracy": 1,
+    "chars": 389
+   }
+  ],
+  "bestApm": 500,
+  "settings": {
+   "flow": false,
+   "sound": true,
+   "blind": false
+  },
+  "arcade": {},
+  "seen": [
+   "briefing:m1-l1",
+   "briefing:m1-l2",
+   "briefing:m1-l3",
+   "briefing:m1-l4",
+   "briefing:m1-l5",
+   "briefing:m1-l6",
+   "briefing:m2-l1",
+   "briefing:m2-l2",
+   "briefing:m2-l3",
+   "briefing:m2-l4",
+   "briefing:m2-l5",
+   "briefing:m2-l6",
+   "briefing:m3-l1",
+   "briefing:m3-l2",
+   "briefing:m3-l3",
+   "briefing:m3-l4",
+   "briefing:m3-l5",
+   "briefing:m4-l1",
+   "briefing:m4-l2",
+   "briefing:m4-l3",
+   "briefing:m4-l4",
+   "briefing:m5-l1",
+   "briefing:m5-l2",
+   "briefing:m5-l3",
+   "briefing:m6-l1",
+   "briefing:m6-l2",
+   "briefing:m6-l3",
+   "briefing:m6-l4",
+   "briefing:m7-l1",
+   "briefing:m7-l2",
+   "briefing:m7-l3"
+  ],
+  "story": {
+   "v": 14,
+   "log": [
+    {
+     "id": "l1-s25",
+     "t": 1790946000000
+    },
+    {
+     "id": "l1-s50",
+     "t": 1790946000000
+    },
+    {
+     "id": "l1-s75",
+     "t": 1790946000000
+    },
+    {
+     "id": "l1-done",
+     "t": 1790946000000
+    },
+    {
+     "id": "badge-tastsinn",
+     "t": 1790946000000
+    },
+    {
+     "id": "l2-brief",
+     "t": 1790946000000
+    },
+    {
+     "id": "l2-s25",
+     "t": 1790946000000
+    },
+    {
+     "id": "l2-s50",
+     "t": 1790946000000
+    },
+    {
+     "id": "l2-s75",
+     "t": 1790946000000
+    },
+    {
+     "id": "l2-done",
+     "t": 1790946000000
+    },
+    {
+     "id": "gift-polo",
+     "t": 1790946000000
+    },
+    {
+     "id": "l3-brief",
+     "t": 1790946000000
+    },
+    {
+     "id": "l3-s25",
+     "t": 1790946000000
+    },
+    {
+     "id": "l3-s50",
+     "t": 1790946000000
+    },
+    {
+     "id": "l3-s75",
+     "t": 1790946000000
+    },
+    {
+     "id": "l3-done",
+     "t": 1790946000000
+    },
+    {
+     "id": "gift-stirnband",
+     "t": 1790946000000
+    },
+    {
+     "id": "l4-brief",
+     "t": 1790946000000
+    },
+    {
+     "id": "l4-s25",
+     "t": 1790946000000
+    },
+    {
+     "id": "l4-s50",
+     "t": 1790946000000
+    },
+    {
+     "id": "l4-s75",
+     "t": 1790946000000
+    },
+    {
+     "id": "l4-done",
+     "t": 1790946000000
+    },
+    {
+     "id": "rank-anwaerter",
+     "t": 1790946000000
+    },
+    {
+     "id": "l5-brief",
+     "t": 1790946000000
+    },
+    {
+     "id": "l5-s25",
+     "t": 1790946000000
+    },
+    {
+     "id": "l5-s50",
+     "t": 1790946000000
+    },
+    {
+     "id": "l5-s75",
+     "t": 1790946000000
+    },
+    {
+     "id": "l5-done",
+     "t": 1790946000000
+    },
+    {
+     "id": "gift-weste",
+     "t": 1790946000000
+    },
+    {
+     "id": "l6-brief",
+     "t": 1790946000000
+    },
+    {
+     "id": "l6-s25",
+     "t": 1790946000000
+    },
+    {
+     "id": "l6-s50",
+     "t": 1790946000000
+    },
+    {
+     "id": "l6-s75",
+     "t": 1790946000000
+    },
+    {
+     "id": "badge-entschluesselt",
+     "t": 1790946000000
+    },
+    {
+     "id": "exam-after",
+     "t": 1790946000000
+    },
+    {
+     "id": "exam-after-foto",
+     "t": 1790946000000
+    },
+    {
+     "id": "badge-grundreihe",
+     "t": 1790946000000
+    },
+    {
+     "id": "a2-start",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l1-brief",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l1-s25",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l1-s50",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l1-s75",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l1-done",
+     "t": 1791032400000
+    },
+    {
+     "id": "rank-agent",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l2-brief",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l2-s25",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l2-s50",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l2-s75",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l2-done",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-gift-schal",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l3-brief",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l3-s25",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l3-s50",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l3-s75",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l3-done",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l4-brief",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l4-s25",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l4-s50",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l4-s75",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l4-done",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l5-brief",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l5-s25",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l5-s50",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l5-s75",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l5-done",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l6-brief",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l6-s25",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l6-s50",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l6-s75",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-l6-done",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-exam-after",
+     "t": 1791032400000
+    },
+    {
+     "id": "a2-gift-shorts",
+     "t": 1791032400000
+    },
+    {
+     "id": "a3-start",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l1-brief",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l1-s25",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l1-s50",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l1-s75",
+     "t": 1791118800000
+    },
+    {
+     "id": "a2-badge-obere-reihe",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l1-done",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l2-brief",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l2-s25",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l2-s50",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l2-s75",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l2-done",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-gift-kopftuch",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l3-brief",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l3-s25",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l3-s50",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l3-s75",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l3-done",
+     "t": 1791118800000
+    },
+    {
+     "id": "badge-serie-3",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l4-brief",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l4-s25",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l4-s50",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l4-s75",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l4-done",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-gift-grubenstiefel",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l5-brief",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l5-s25",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l5-s50",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l5-s75",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-l5-done",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-exam-after",
+     "t": 1791118800000
+    },
+    {
+     "id": "a3-gift-faltstiefel",
+     "t": 1791118800000
+    },
+    {
+     "id": "a4-start",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l1-brief",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l1-s25",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l1-s50",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l1-s75",
+     "t": 1791205200000
+    },
+    {
+     "id": "a3-badge-untere-reihe",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l1-done",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l2-brief",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l2-s25",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l2-s50",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l2-s75",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l2-done",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-gift-krawatte",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l3-brief",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l3-s25",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l3-s50",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l3-s75",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-gift-fliege",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l3-done",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-gift-melone",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l4-brief",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l4-s25",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l4-s50",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l4-s75",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-l4-done",
+     "t": 1791205200000
+    },
+    {
+     "id": "rank-spezialagent",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-exam-after",
+     "t": 1791205200000
+    },
+    {
+     "id": "a4-gift-nadelstreifen",
+     "t": 1791205200000
+    },
+    {
+     "id": "a5-start",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l1-brief",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l1-s25",
+     "t": 1791291600000
+    },
+    {
+     "id": "a4-badge-grossschreibung",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l1-s50",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l1-s75",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l1-done",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-gift-guertel",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l2-brief",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l2-s25",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l2-s50",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l2-s75",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l2-done",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-gift-hosentraeger",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l3-brief",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l3-s25",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l3-s50",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l3-s75",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-gift-nacht",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-l3-done",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-exam-after",
+     "t": 1791291600000
+    },
+    {
+     "id": "a5-gift-strubbelig",
+     "t": 1791291600000
+    },
+    {
+     "id": "a6-start",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l1-brief",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l1-s25",
+     "t": 1791378000000
+    },
+    {
+     "id": "a5-badge-satzzeichen",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l1-s50",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l1-s75",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l1-done",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-gift-epauletten",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l2-brief",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l2-s25",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l2-s50",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l2-s75",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l2-done",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l3-brief",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l3-s25",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l3-s50",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l3-s75",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l3-done",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l4-brief",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l4-s25",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l4-s50",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l4-s75",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-l4-done",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-gift-manschetten",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-exam-after",
+     "t": 1791378000000
+    },
+    {
+     "id": "a6-gift-sandalen",
+     "t": 1791378000000
+    },
+    {
+     "id": "a7-start",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l1-brief",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l1-s25",
+     "t": 1791464400000
+    },
+    {
+     "id": "a6-badge-zahlen",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l1-s50",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l1-s75",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l1-done",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-gift-umhang",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l2-brief",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l2-s25",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l2-s50",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-gift-dreispitz",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l2-s75",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l2-done",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l3-brief",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l3-s25",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l3-s50",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-gift-agentenstiefel",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l3-s75",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-l3-done",
+     "t": 1791464400000
+    },
+    {
+     "id": "rank-geheimagent",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-exam-after",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-fest",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-gift-gold",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-badge-sonderzeichen",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-side-team-1",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-side-lollis-1",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-side-festrede-1",
+     "t": 1791464400000
+    },
+    {
+     "id": "a7-side-benno-tippt-1",
+     "t": 1791464400000
+    }
+   ],
+   "picks": {},
+   "read": [
+    "l1-s25",
+    "l1-s50",
+    "l1-s75",
+    "l1-done",
+    "badge-tastsinn",
+    "l2-brief",
+    "l2-s25",
+    "l2-s50",
+    "l2-s75",
+    "l2-done",
+    "gift-polo",
+    "l3-brief",
+    "l3-s25",
+    "l3-s50",
+    "l3-s75",
+    "l3-done",
+    "gift-stirnband",
+    "l4-brief",
+    "l4-s25",
+    "l4-s50",
+    "l4-s75",
+    "l4-done",
+    "rank-anwaerter",
+    "l5-brief",
+    "l5-s25",
+    "l5-s50",
+    "l5-s75",
+    "l5-done",
+    "gift-weste",
+    "l6-brief",
+    "l6-s25",
+    "l6-s50",
+    "l6-s75",
+    "badge-entschluesselt",
+    "exam-after",
+    "exam-after-foto",
+    "badge-grundreihe",
+    "a2-start",
+    "a2-l1-brief",
+    "a2-l1-s25",
+    "a2-l1-s50",
+    "a2-l1-s75",
+    "a2-l1-done",
+    "rank-agent",
+    "a2-l2-brief",
+    "a2-l2-s25",
+    "a2-l2-s50",
+    "a2-l2-s75",
+    "a2-l2-done",
+    "a2-gift-schal",
+    "a2-l3-brief",
+    "a2-l3-s25",
+    "a2-l3-s50",
+    "a2-l3-s75",
+    "a2-l3-done",
+    "a2-l4-brief",
+    "a2-l4-s25",
+    "a2-l4-s50",
+    "a2-l4-s75",
+    "a2-l4-done",
+    "a2-l5-brief",
+    "a2-l5-s25",
+    "a2-l5-s50",
+    "a2-l5-s75",
+    "a2-l5-done",
+    "a2-l6-brief",
+    "a2-l6-s25",
+    "a2-l6-s50",
+    "a2-l6-s75",
+    "a2-l6-done",
+    "a2-exam-after",
+    "a2-gift-shorts",
+    "a3-start",
+    "a3-l1-brief",
+    "a3-l1-s25",
+    "a3-l1-s50",
+    "a3-l1-s75",
+    "a2-badge-obere-reihe",
+    "a3-l1-done",
+    "a3-l2-brief",
+    "a3-l2-s25",
+    "a3-l2-s50",
+    "a3-l2-s75",
+    "a3-l2-done",
+    "a3-gift-kopftuch",
+    "a3-l3-brief",
+    "a3-l3-s25",
+    "a3-l3-s50",
+    "a3-l3-s75",
+    "a3-l3-done",
+    "badge-serie-3",
+    "a3-l4-brief",
+    "a3-l4-s25",
+    "a3-l4-s50",
+    "a3-l4-s75",
+    "a3-l4-done",
+    "a3-gift-grubenstiefel",
+    "a3-l5-brief",
+    "a3-l5-s25",
+    "a3-l5-s50",
+    "a3-l5-s75",
+    "a3-l5-done",
+    "a3-exam-after",
+    "a3-gift-faltstiefel",
+    "a4-start",
+    "a4-l1-brief",
+    "a4-l1-s25",
+    "a4-l1-s50",
+    "a4-l1-s75",
+    "a3-badge-untere-reihe",
+    "a4-l1-done",
+    "a4-l2-brief",
+    "a4-l2-s25",
+    "a4-l2-s50",
+    "a4-l2-s75",
+    "a4-l2-done",
+    "a4-gift-krawatte",
+    "a4-l3-brief",
+    "a4-l3-s25",
+    "a4-l3-s50",
+    "a4-l3-s75",
+    "a4-gift-fliege",
+    "a4-l3-done",
+    "a4-gift-melone",
+    "a4-l4-brief",
+    "a4-l4-s25",
+    "a4-l4-s50",
+    "a4-l4-s75",
+    "a4-l4-done",
+    "rank-spezialagent",
+    "a4-exam-after",
+    "a4-gift-nadelstreifen",
+    "a5-start",
+    "a5-l1-brief",
+    "a5-l1-s25",
+    "a4-badge-grossschreibung",
+    "a5-l1-s50",
+    "a5-l1-s75",
+    "a5-l1-done",
+    "a5-gift-guertel",
+    "a5-l2-brief",
+    "a5-l2-s25",
+    "a5-l2-s50",
+    "a5-l2-s75",
+    "a5-l2-done",
+    "a5-gift-hosentraeger",
+    "a5-l3-brief",
+    "a5-l3-s25",
+    "a5-l3-s50",
+    "a5-l3-s75",
+    "a5-gift-nacht",
+    "a5-l3-done",
+    "a5-exam-after",
+    "a5-gift-strubbelig",
+    "a6-start",
+    "a6-l1-brief",
+    "a6-l1-s25",
+    "a5-badge-satzzeichen",
+    "a6-l1-s50",
+    "a6-l1-s75",
+    "a6-l1-done",
+    "a6-gift-epauletten",
+    "a6-l2-brief",
+    "a6-l2-s25",
+    "a6-l2-s50",
+    "a6-l2-s75",
+    "a6-l2-done",
+    "a6-l3-brief",
+    "a6-l3-s25",
+    "a6-l3-s50",
+    "a6-l3-s75",
+    "a6-l3-done",
+    "a6-l4-brief",
+    "a6-l4-s25",
+    "a6-l4-s50",
+    "a6-l4-s75",
+    "a6-l4-done",
+    "a6-gift-manschetten",
+    "a6-exam-after",
+    "a6-gift-sandalen",
+    "a7-start",
+    "a7-l1-brief",
+    "a7-l1-s25",
+    "a6-badge-zahlen",
+    "a7-l1-s50",
+    "a7-l1-s75",
+    "a7-l1-done",
+    "a7-gift-umhang",
+    "a7-l2-brief",
+    "a7-l2-s25",
+    "a7-l2-s50",
+    "a7-gift-dreispitz",
+    "a7-l2-s75",
+    "a7-l2-done",
+    "a7-l3-brief",
+    "a7-l3-s25",
+    "a7-l3-s50",
+    "a7-gift-agentenstiefel",
+    "a7-l3-s75",
+    "a7-l3-done",
+    "rank-geheimagent",
+    "a7-exam-after",
+    "a7-fest",
+    "a7-gift-gold",
+    "a7-badge-sonderzeichen",
+    "a7-side-team-1",
+    "a7-side-lollis-1",
+    "a7-side-festrede-1",
+    "a7-side-benno-tippt-1"
+   ]
+  },
+  "cases": {}
+ }
+}

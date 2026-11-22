@@ -1,0 +1,181 @@
+/* Story-Dialog im Bilderbuch-Stil: Bühne, Figuren, Sprechblase, Antworten, Enter-Hinweis */
+
+.vn {
+  /* Höhe der Gesprächsbox: größter Inhalt bei breitem bzw. schmalem Fenster (siehe docs/technik/architektur.md) */
+  --dialog-h: 21rem;
+  position: relative;
+  /* dynamische Höhe: auf Tablets und Handys zählt 100vh die Browserleiste mit, die Box rutschte aus dem Bild */
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.stage {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: calc(var(--px) * 56);
+  padding: 0 24px;
+}
+.cast {
+  display: flex;
+  gap: 18px;
+  align-items: flex-end;
+}
+.actor {
+  transition:
+    filter 0.25s,
+    transform 0.25s;
+  filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.6));
+}
+.actor.dim {
+  filter: brightness(0.55) saturate(0.7) drop-shadow(0 10px 8px rgba(0, 0, 0, 0.6));
+}
+.actor.active {
+  /* ein Grafikpixel nach oben – auf dem gemeinsamen Raster */
+  transform: translateY(calc(var(--px) * -1));
+}
+.actor-kruemel {
+  margin-bottom: calc(var(--px) * 22);
+}
+.actor-player canvas.lpc {
+  transform: scaleX(-1);
+}
+.dialog-box {
+  position: relative;
+  z-index: 1;
+  background: rgba(14, 20, 36, 0.94);
+  border: 2px solid var(--line);
+  border-radius: 16px;
+  padding: 14px 20px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  cursor: pointer;
+  box-shadow: 0 -6px 30px rgba(0, 0, 0, 0.4);
+  animation: rise 0.25s ease-out;
+  /* Feste Höhe, so groß wie der größte Inhalt (Name, 120 Zeichen, drei Antworten mit Hinweis):
+     Die Box wächst und schrumpft nie, der Hintergrund bleibt stehen (useStageMetrics).
+     Passt der Inhalt auf einem sehr kleinen Fenster nicht, scrollt die Box innen. */
+  box-sizing: border-box;
+  height: min(var(--dialog-h), 60vh);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.dialog-box.speaker-ada {
+  border-color: var(--cyan);
+}
+.dialog-box.speaker-kruemel {
+  border-color: var(--yellow);
+}
+.dialog-box.speaker-baron {
+  border-color: #c0283a;
+}
+.dialog-box.speaker-juna {
+  border-color: var(--magenta);
+}
+.dialog-box.speaker-benno {
+  border-color: #b48cff;
+}
+.dialog-box.speaker-player {
+  border-color: var(--green);
+}
+.dialog-box p {
+  margin: 6px 0 12px;
+}
+.dialog-box .narration {
+  font-style: italic;
+  color: #c9d3ee;
+}
+.dialog-box .who {
+  font-family: var(--pixel);
+  font-size: 0.9rem;
+  color: var(--cyan);
+}
+.speaker-kruemel .who {
+  color: var(--yellow);
+}
+.speaker-baron .who {
+  color: #ff6b81;
+}
+.speaker-juna .who {
+  color: var(--magenta);
+}
+.speaker-benno .who {
+  color: #b48cff;
+}
+.speaker-player .who {
+  color: var(--green);
+}
+.dialog-foot {
+  /* „Weiter“ und die Antworten sitzen immer am unteren Rand der Box */
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.choices {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.choice {
+  text-align: left;
+  font-size: 1.05rem;
+  padding: 10px 14px;
+  background: rgba(77, 255, 154, 0.06);
+  border: 1px solid rgba(77, 255, 154, 0.35);
+}
+.choice.picked {
+  background: rgba(77, 255, 154, 0.18);
+  border-color: var(--green);
+  box-shadow: 0 0 14px rgba(77, 255, 154, 0.3);
+}
+.choice .num {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: var(--green);
+  color: #062012;
+  font-family: var(--pixel);
+  font-size: 0.8rem;
+  margin-right: 8px;
+}
+.dialog-keys {
+  /* über der Textbox, außerhalb des Flusses: die Figuren bleiben auf dem Boden */
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  translate: -50% 0;
+  width: min(560px, 100%);
+  font-size: 1rem;
+  line-height: normal;
+  cursor: default;
+  animation: rise 0.25s ease-out;
+}
+
+/* Unter den Antworten: wie man wählt */
+.choice-hint {
+  margin: 2px 0 0;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* Mittlere Breite: die längste Zeile braucht hier drei statt zwei Zeilen */
+@media (max-width: 800px) {
+  .vn {
+    --dialog-h: 23rem;
+  }
+}
+@media (max-width: 700px) {
+  .vn {
+    --dialog-h: 32rem;
+  }
+}

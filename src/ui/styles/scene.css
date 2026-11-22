@@ -1,0 +1,165 @@
+/* Szenen-Hintergründe (SVG), Leuchtschrift, blinkende LEDs, schwebende Drohne */
+
+.scene {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--bg);
+}
+.scene svg {
+  /* Jedes Grafikpixel ist --px groß, wie bei den Figuren; die Kulisse deckt das Fenster, Überstand wird abgeschnitten */
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - var(--px) * 160);
+  width: calc(var(--px) * 320);
+  height: calc(var(--px) * 180);
+  display: block;
+}
+/* Im Bilderbuch angehoben, damit der Boden unter den Füßen der Figuren liegt (Dialog.tsx);
+   darunter läuft die Bodenfarbe der Szene weiter. Die Gesprächsbox hat feste Höhe, der Wert ändert sich
+   nur beim Erscheinen und bei Fenstergrößen-Änderung – die Szene steht still. */
+.vn .scene svg {
+  translate: 0 calc(-1 * var(--lift, 0px));
+  transition: translate 0.3s ease-out;
+}
+.scene-keller {
+  background: #0c1020;
+}
+.scene-backstube {
+  background: #6b4329;
+}
+.scene-firewall {
+  background: #12060c;
+}
+.scene-funkturm {
+  background: #101a38;
+}
+.scene-tunnel {
+  background: #0a0f1c;
+}
+.scene-turm {
+  background: #0a0f1c;
+}
+.scene-marktplatz {
+  background: #121a3a;
+}
+.scene-tresor {
+  background: #121829;
+}
+.scene-zentrale {
+  background: #2e2040;
+}
+.scene::after {
+  /* leicht abdunkeln, damit Text lesbar bleibt */
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 40%, rgba(10, 14, 25, 0.25), rgba(10, 14, 25, 0.7));
+}
+.scene-schreibtisch::after,
+.scene-backstube::after {
+  background: radial-gradient(ellipse at 50% 35%, rgba(10, 14, 25, 0.2), rgba(10, 14, 25, 0.55));
+}
+.scene .neon {
+  font-family: var(--pixel);
+  font-size: 12px;
+  fill: #2ee6ff;
+  filter: drop-shadow(0 0 2px #2ee6ff) drop-shadow(0 0 5px #2ee6ff);
+  animation: neon 7s infinite;
+}
+.scene .shop {
+  font-family: var(--pixel);
+  font-size: 8px;
+  fill: #fbe7c4;
+}
+.scene .poster {
+  font-family: var(--pixel);
+  font-size: 8px;
+  fill: #2b2418;
+}
+.scene .binary {
+  /* Pixelschrift wie alle Beschriftungen der Kulissen */
+  font-family: var(--pixel);
+  font-size: 8px;
+  fill: #5a1a36;
+}
+svg .led {
+  animation: led 2.4s steps(1) infinite;
+}
+/* Server-Lampen: meist ruhig an, nur ab und zu ein dezentes Flackern oder Abdunkeln.
+   Takt und Versatz je Lampe aus Scene.tsx (--led-t, --led-d); Lampen ohne Klasse bleiben ruhig */
+.scene .server-led.flicker {
+  animation: led-flicker var(--led-t, 12s) linear var(--led-d, 0s) infinite;
+}
+.scene .server-led.blink {
+  animation: led-blink var(--led-t, 12s) linear var(--led-d, 0s) infinite;
+}
+/* Auch bei „Bewegung reduzieren“: die Lampen bewegen sich nicht, sie werden nur heller und dunkler
+   (die Regel in base.css schaltet sonst jede Animation ab) */
+@media (prefers-reduced-motion: reduce) {
+  .scene .server-led.flicker {
+    animation: led-flicker var(--led-t, 12s) linear var(--led-d, 0s) infinite !important;
+  }
+  .scene .server-led.blink {
+    animation: led-blink var(--led-t, 12s) linear var(--led-d, 0s) infinite !important;
+  }
+}
+@keyframes led-flicker {
+  0%,
+  95%,
+  100% {
+    opacity: 1;
+  }
+  96% {
+    opacity: 0.5;
+  }
+  97% {
+    opacity: 0.85;
+  }
+  98% {
+    opacity: 0.55;
+  }
+}
+@keyframes led-blink {
+  0%,
+  94%,
+  100% {
+    opacity: 1;
+  }
+  95%,
+  97% {
+    opacity: 0.45;
+  }
+}
+.drone.hover {
+  animation: hover 2.2s ease-in-out infinite;
+}
+/* Krümels Rotoren: zwei Bilder im Wechsel, je 70 ms */
+.drone .rotor-b {
+  opacity: 0;
+}
+.drone.hover .rotor-a {
+  animation: rotor-a 140ms step-end infinite;
+}
+.drone.hover .rotor-b {
+  animation: rotor-b 140ms step-end infinite;
+}
+@keyframes rotor-a {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes rotor-b {
+  50% {
+    opacity: 1;
+  }
+}
+/* Kacheln (Kulissen und Story-Bilder): Pixel bleiben scharf */
+.prop {
+  image-rendering: pixelated;
+}
+/* Im dunklen Keller werden die Kacheln (Werkzeugwand, Mehlsäcke) gleichmäßig gedimmt,
+   sonst wirken sie wie angestrahlt neben den gezeichneten Racks; die Dateien bleiben unverändert. */
+.scene-keller .prop {
+  filter: brightness(0.75);
+}

@@ -1,0 +1,291 @@
+/* Tastensiegel: drei Riegel je Taste, Leiste beim Tippen, Ringe auf der Tastatur */
+
+.seals {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.seal {
+  min-width: 150px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+}
+.seal.secured {
+  border-color: var(--green);
+  box-shadow: 0 0 10px rgba(77, 255, 154, 0.25);
+}
+.seal-key {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.seal-key b {
+  font-family: var(--pixel);
+  font-size: 1rem;
+  color: var(--cyan);
+}
+.seal-ok {
+  color: var(--green);
+}
+.latch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.latch-label {
+  width: 3.6em;
+  color: var(--text);
+  opacity: 0.85;
+}
+.latch.open .latch-label {
+  color: var(--green);
+  opacity: 1;
+}
+.latch-dots {
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+}
+.latch-text {
+  margin-left: auto;
+}
+.latch.open {
+  color: var(--green);
+}
+.latch.flash {
+  animation: latch-open 1s ease-out;
+}
+@keyframes latch-open {
+  0% {
+    text-shadow: 0 0 0 transparent;
+    transform: scale(1);
+  }
+  30% {
+    text-shadow: 0 0 12px var(--green);
+    transform: scale(1.08);
+  }
+  100% {
+    text-shadow: 0 0 0 transparent;
+    transform: scale(1);
+  }
+}
+.seals-legend {
+  margin: 4px 0 0;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+.seals.big .seal {
+  min-width: 190px;
+  font-size: 0.9rem;
+  padding: 10px 14px;
+}
+
+/* Leiste über dem Tipptext */
+.seal-bar {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.seal-bar .kruemel-hint {
+  flex: 1 1 220px;
+  align-self: center;
+  margin: 0;
+}
+
+/* Ring aus drei Teilen auf der Bildschirmtastatur: Training, Präzision, Tempo */
+.kb-key.ringed::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  padding: 2px;
+  border-radius: 9px;
+  background: conic-gradient(
+    var(--r1, #3b4670) 0 118deg,
+    transparent 118deg 120deg,
+    var(--r2, #3b4670) 120deg 238deg,
+    transparent 238deg 240deg,
+    var(--r3, #3b4670) 240deg 358deg,
+    transparent 358deg 360deg
+  );
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.kb-key.ring-1 {
+  --r1: var(--green);
+}
+.kb-key.ring-2 {
+  --r2: var(--green);
+}
+.kb-key.ring-3 {
+  --r3: var(--green);
+}
+.kb-check {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  font-size: 0.7rem;
+  color: var(--green);
+}
+
+/* Nachbesprechung, unter dem Story-Objekt: wann die nächste Nachricht kommt */
+.next-scene {
+  margin: 6px 0;
+  font-size: 0.9rem;
+  color: var(--cyan);
+}
+
+/* Wenig Höhe: die Leiste wird kompakt – Siegel in einer Zeile, Krümels Hinweis kleiner (er bricht um) */
+@media (max-height: 759px) {
+  .seal-bar {
+    gap: 8px;
+    flex-wrap: nowrap;
+    margin-bottom: 6px;
+  }
+  .seal-bar .story-object {
+    min-width: 0;
+    max-width: 190px;
+    padding: 3px 8px;
+    font-size: 0.68rem;
+  }
+  .seal-bar .so-lines {
+    min-height: 0;
+  }
+  .seal-bar .story-object.kind-picture .story-pic,
+  .seal-bar .case-gadget .story-pic {
+    width: 104px;
+  }
+  .seal-bar .story-object.kind-picture .story-pic.pic-gadget,
+  .seal-bar .case-gadget .story-pic.pic-gadget {
+    width: 64px; /* 4 × 16 */
+  }
+  .seal-bar .story-object.kind-picture .story-pic.pic-evidence,
+  .seal-bar .case-gadget .story-pic.pic-evidence {
+    width: 96px; /* 3 × 32 */
+  }
+  .seal-bar .story-object.kind-picture .story-pic.pic-object,
+  .seal-bar .case-gadget .story-pic.pic-object {
+    width: 128px; /* 2 × 64 */
+  }
+  .seal-bar .story-object.kind-picture .story-pic.pic-panorama,
+  .seal-bar .case-gadget .story-pic.pic-panorama {
+    width: 96px; /* 1 × 96 */
+  }
+  .seals {
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
+  .seal {
+    min-width: 0;
+    padding: 3px 8px;
+    font-size: 0.7rem;
+  }
+  .latch {
+    line-height: 1.25;
+  }
+  /* der Hinweis bricht um statt mit „…“ abzubrechen (ein gekappter Fingerhinweis hilft nicht) */
+  .seal-bar .kruemel-hint {
+    flex: 1 1 120px;
+    min-width: 0;
+    margin: 0;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+  .seal-bar .kruemel-hint > :not(canvas, svg) {
+    min-width: 0;
+  }
+}
+/* Schmal und niedrig (Handy): für den umbrechenden Hinweis bleibt neben Objekt und Siegeln kein Platz, er bekommt eine eigene Zeile */
+@media (max-height: 759px) and (max-width: 599px) {
+  .seal-bar {
+    flex-wrap: wrap;
+  }
+  .seal-bar .kruemel-hint {
+    flex-basis: 100%;
+  }
+}
+@media (max-height: 639px) {
+  .seal-bar .kruemel-hint > :is(canvas, svg) {
+    display: none;
+  }
+}
+
+/* Quer und niedrig mit Seitenleiste (Anordnung in typing.css): Kopf bricht um, Objekt, Siegel und Krümels Hinweis stehen untereinander */
+@media (max-height: 759px) and (min-aspect-ratio: 5/4) and (min-width: 700px) {
+  .with-side .seal-bar {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 6px;
+    margin: 0;
+  }
+  .with-side .seal-bar .story-object,
+  .with-side .seal-bar .case-gadget {
+    max-width: 100%;
+  }
+  .with-side .seals {
+    flex-direction: column;
+    gap: 4px;
+  }
+  /* vier Siegel (Akt 6 „Koordinaten“, Akt 7 „Der Schaltplan“) müssen ohne Rollen in 532 px Höhe passen: enger setzen */
+  .with-side .seal {
+    padding: 2px 8px;
+  }
+  .with-side .seal-key b {
+    font-size: 0.85rem;
+  }
+  .with-side .latch {
+    line-height: 1.15;
+  }
+  .with-side .seals-legend {
+    display: none;
+  }
+  .with-side .seal-bar .kruemel-hint {
+    flex: none;
+    align-self: stretch;
+  }
+}
+
+/* Schmal (Handy): Siegel brechen in Zeilen um, nichts ragt über den Rand. Krümels Hinweis bekommt eine eigene Zeile
+   (Kamera-Auge links, Text mindestens 160 px breit). Gilt auch bei wenig Höhe, wo die Leiste sonst einzeilig ist. */
+@media (max-width: 599px) {
+  .seals,
+  .seal-bar .seals {
+    flex-wrap: wrap;
+  }
+  .seal,
+  .seals.big .seal {
+    min-width: 0;
+    max-width: 100%;
+    flex: 1 1 140px;
+  }
+  .seal-bar {
+    flex-wrap: wrap;
+  }
+  .seal-bar .story-object,
+  .seal-bar .case-gadget {
+    max-width: 100%;
+  }
+  .seal-bar .kruemel-hint {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+  .seal-bar .kruemel-hint > p {
+    min-width: 160px;
+    flex: 1 1 160px;
+  }
+}
+/* Die großen Siegelkarten der Nachbesprechung brechen immer um (auch bei wenig Höhe), sonst ragen vier Karten aus dem Fenster */
+.seals.big {
+  flex-wrap: wrap;
+}

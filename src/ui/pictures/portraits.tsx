@@ -1,0 +1,288 @@
+// Porträts der Verdächtigen in den Fallakten: Zeichen-Karten 16×16 (Bildart `gadget`) auf der Palette, Kopf mit einem Merkmal
+// (Mütze, Zylinder und Monokel, Ausleger, Fragezeichen, Dutt und Brille, Amtskette, Scheitel und Lolli, Schnurrbart; Tippi als
+// Maschine mit Lächeln auf dem Schirm, die Elster als Vogel). Haut aus Papiertönen: `paper` Licht, `paper-dark` Grund, `wood-light`
+// Schatten. Stilregeln in docs/design/grafik.md, „Eigene Bilder“.
+
+import type { ReactElement } from 'react';
+import type { PortraitPictureId } from '../../domain/storyObject.ts';
+import { Grid } from '../pixel/Pixel.tsx';
+import { fromPalette, type Px } from '../pixel/pixelMap.ts';
+
+interface Portrait {
+  /** Alternativtext */
+  title: string;
+  px: Px[];
+}
+
+/** Die Porträt-Karten; Ortruds Karte ist auch das Foto auf ihrer Schlüsselkarte (akt3.tsx) */
+export const PORTRAITS: Record<PortraitPictureId, Portrait> = {
+  'portraet-kringel': {
+    title: 'Herr Kringel: Dienstmütze und Schnurrbart',
+    px: fromPalette(
+      [
+        '................',
+        '.....KKKKKK.....',
+        '....KgGGGGHK....',
+        '....KGGGGGHK....',
+        '..KKKKKKKKKKKK..',
+        '...KPSSSSSSwK...',
+        '...KPSSSSSSwK...',
+        '...KPSKSSKSwK...',
+        '...KPSSSSSSwK...',
+        '...KPSWWWWSwK...',
+        '...KPSSKKSSwK...',
+        '....KSSSSSwK....',
+        '.....KKKKKK.....',
+        '...KKHHHHHHKK...',
+        '..KHHHHHHHHHHK..',
+        '..KKKKKKKKKKKK..',
+      ],
+      { G: 'glass', H: 'glass-dark', K: 'outline', P: 'paper', S: 'paper-dark', W: 'wood', g: 'glass-light', w: 'wood-light' },
+    ),
+  },
+  'portraet-baron': {
+    title: 'Baron von Backspace: nur ein Zylinder und ein Monokel',
+    px: fromPalette(
+      [
+        '................',
+        '....KKKKKKKK....',
+        '....KIIIIIIK....',
+        '....KIIIIIIK....',
+        '....KIIIIIIK....',
+        '....KRRRRRRK....',
+        '..KKKKKKKKKKKK..',
+        '...KDDDDDDDDK...',
+        '...KDDDDYYYDK...',
+        '...KDDDDYgYDK...',
+        '...KDDDDYYYDK...',
+        '....KDDDDDDK....',
+        '.....KKKKKK.....',
+        '...KKIIIIIIKK...',
+        '..KIIIIIIIIIIK..',
+        '..KKKKKKKKKKKK..',
+      ],
+      { D: 'metal-dark', I: 'ink', K: 'outline', R: 'red', Y: 'gold', g: 'glass-light' },
+    ),
+  },
+  'portraet-ortrud': {
+    title: 'Ortrud: Lokführermütze und roter Schal',
+    px: fromPalette(
+      [
+        '................',
+        '.....KKKKKK.....',
+        '....KMDDDDDK....',
+        '....KDDYDDDK....',
+        '..KKKKKKKKKKKK..',
+        '...KmPSSSSwmK...',
+        '...KmPSSSSwmK...',
+        '...KmPKSSKwmK...',
+        '...KmPSSSSwmK...',
+        '...KmPSKKSwmK...',
+        '...KmPSSSSwmK...',
+        '....KSSSSSwK....',
+        '.....KKKKKK.....',
+        '...KKrRRRRRKK...',
+        '..KDDDDDDDDDDK..',
+        '..KKKKKKKKKKKK..',
+      ],
+      { D: 'metal-dark', K: 'outline', M: 'metal', P: 'paper', R: 'red', S: 'paper-dark', Y: 'gold', m: 'metal-light', r: 'red-light', w: 'wood-light' },
+    ),
+  },
+  'portraet-kruemel': {
+    title: 'Krümel',
+    px: fromPalette(
+      [
+        '................',
+        '..KgggK..KgggK..',
+        '...KMK....KMK...',
+        '...KMMKKKKMMK...',
+        '..KKmmmmmmmmKK..',
+        '..KMmKKKKKKmDK..',
+        '..KMmKIIIIKmDK..',
+        '..KMmKIGgIKmDK..',
+        '..KMmKIGGIKmDK..',
+        '..KMmKIIIIKmDK..',
+        '..KMmKKKKKKmDK..',
+        '..KMYYMMMMMDDK..',
+        '..KKKKKKKKKKKK..',
+        '....K......K....',
+        '...KKK....KKK...',
+        '................',
+      ],
+      { D: 'metal-dark', G: 'glass', I: 'ink', K: 'outline', M: 'metal', Y: 'gold', g: 'glass-light', m: 'metal-light' },
+    ),
+  },
+  'portraet-unbekannt': {
+    title: 'O.: unbekannt, ein Fragezeichen',
+    px: fromPalette(
+      [
+        '................',
+        '.....KKKKKK.....',
+        '....KDDDDDDK....',
+        '...KDDDDDDDDK...',
+        '...KDDpppDDDK...',
+        '...KDDDDpDDDK...',
+        '...KDDDppDDDK...',
+        '...KDDDpDDDDK...',
+        '...KDDDDDDDDK...',
+        '...KDDDpDDDDK...',
+        '...KDDDDDDDDK...',
+        '....KDDDDDDK....',
+        '.....KKKKKK.....',
+        '...KKDDDDDDKK...',
+        '..KDDDDDDDDDDK..',
+        '..KKKKKKKKKKKK..',
+      ],
+      { D: 'metal-dark', K: 'outline', p: 'paper-light' },
+    ),
+  },
+  'portraet-elster': {
+    title: 'Die Elster: schwarz-weiß, goldener Schnabel',
+    px: fromPalette(
+      [
+        '................',
+        '......KKKKK.....',
+        '.....KIIIIIK....',
+        '....KIIIIIIIK...',
+        '...KIIIIIIIIIK..',
+        '...KIIKgKIIIKKK.',
+        '...KIIKKKIIKYYK.',
+        '...KIIIIIIIKYOK.',
+        '...KpIIIIIIIKKK.',
+        '...KppIIIIIIK...',
+        '....KppIIIIK....',
+        '.....KpppIK.....',
+        '...KKKpppKKK....',
+        '..KppppppIIIK...',
+        '..KpppppIIIIK...',
+        '..KKKKKKKKKKKK..',
+      ],
+      { I: 'ink', K: 'outline', O: 'gold-dark', Y: 'gold', g: 'glass-light', p: 'paper-light' },
+    ),
+  },
+  'portraet-hubbel': {
+    title: 'Frau Hubbel: grauer Dutt und runde Brille',
+    px: fromPalette(
+      [
+        '................',
+        '.......KKK......',
+        '......KmmmK.....',
+        '.....KKKKKKK....',
+        '....KmmmmmmmK...',
+        '...KmPSSSSSwmK..',
+        '...KmPSSSSSwmK..',
+        '...KKGKKGKKGKK..',
+        '...KPKSKSKSKwK..',
+        '...KPSKSSKSSwK..',
+        '...KPSSKKSSSwK..',
+        '....KSSSSSwK....',
+        '.....KKKKKK.....',
+        '...KKHHHHHHKK...',
+        '..KHHHHHHHHHHK..',
+        '..KKKKKKKKKKKK..',
+      ],
+      { G: 'glass', H: 'glass-dark', K: 'outline', P: 'paper', S: 'paper-dark', m: 'metal-light', w: 'wood-light' },
+    ),
+  },
+  'portraet-hilde': {
+    title: 'Hilde Hupf: Bürgermeisterin mit Amtskette',
+    px: fromPalette(
+      [
+        '................',
+        '.....KKKKKK.....',
+        '....KwwwwwwK....',
+        '...KwwwwwwwwK...',
+        '..KwwPSSSSSwwK..',
+        '..KwwPSSSSSwwK..',
+        '..KwKPKSSKSKwK..',
+        '..KwKPSSSSSKwK..',
+        '..KwKPSSSSSKwK..',
+        '...KKPSKKSSKK...',
+        '....KSSSSSwK....',
+        '.....KKKKKK.....',
+        '...KKRYRRYRKK...',
+        '..KRRRRYYRRRRK..',
+        '..KRRRRRRRRREK..',
+        '..KKKKKKKKKKKK..',
+      ],
+      { E: 'red-dark', K: 'outline', P: 'paper', R: 'red', S: 'paper-dark', Y: 'gold', w: 'wood-light' },
+    ),
+  },
+  'portraet-otti': {
+    title: 'Otti Korrekt: strenger Scheitel, ein Lolli in der Hand',
+    px: fromPalette(
+      [
+        '................',
+        '.....KKKKKK.....',
+        '....KBBBBBBK....',
+        '...KBBBBBBBBK...',
+        '...KBPSSSSSBK...',
+        '...KBPSSSSSwK...',
+        '...KBPKSSKSwK...',
+        '...KBPSSSSSwK...',
+        '...KBPSSSSSwK...',
+        '...KKPSRRSSwK...',
+        '....KSSSSSwK..KK',
+        '.....KKKKKK..KrK',
+        '...KKIIIIIIKKKRK',
+        '..KIIIIIIIIIIKpK',
+        '..KIIIIIIIIIIKpK',
+        '..KKKKKKKKKKKK.K',
+      ],
+      { B: 'wood-dark', I: 'ink', K: 'outline', P: 'paper', R: 'red', S: 'paper-dark', p: 'paper-light', r: 'red-light', w: 'wood-light' },
+    ),
+  },
+  'portraet-tippi': {
+    title: 'Tippi: Ottis Maschine, ein Lächeln auf dem Schirm',
+    px: fromPalette(
+      [
+        '.......KK.......',
+        '.......KmK......',
+        '..KKKKKKKKKKKK..',
+        '..KmmmmmmmmmmK..',
+        '..KmKKKKKKKKDK..',
+        '..KmKIIIIIIKDK..',
+        '..KmKIgIIgIKDK..',
+        '..KmKIIIIIIKDK..',
+        '..KmKIgIIgIKDK..',
+        '..KmKIIggIIKDK..',
+        '..KmKKKKKKKKDK..',
+        '..KmMMMMMMMMDK..',
+        '..KmMrMMMMnMDK..',
+        '..KMMMMMMMMDDK..',
+        '..KKKKKKKKKKKK..',
+        '....KK....KK....',
+      ],
+      { D: 'metal-dark', I: 'ink', K: 'outline', M: 'metal', g: 'glass-light', m: 'metal-light', n: 'green-light', r: 'red-light' },
+    ),
+  },
+  'portraet-benno': {
+    title: 'Benno: schwarzes Haar, Schnurrbart, weißes Hemd',
+    px: fromPalette(
+      [
+        '................',
+        '.....KKKKKK.....',
+        '....KIIIIIIK....',
+        '...KIIIIIIIIK...',
+        '...KIPSSSSSwK...',
+        '...KIPSSSSSwK...',
+        '...KIPKSSKSwK...',
+        '...KIPSSSSSwK...',
+        '...KIPSIIISwK...',
+        '...KIPSSKSSwK...',
+        '....KSSSSSwK....',
+        '.....KKKKKK.....',
+        '...KKppppppKK...',
+        '..KpppppppppSK..',
+        '..KpppppppppSK..',
+        '..KKKKKKKKKKKK..',
+      ],
+      { I: 'ink', K: 'outline', P: 'paper', S: 'paper-dark', p: 'paper-light', w: 'wood-light' },
+    ),
+  },
+};
+
+/** Bild-Kennungen dieser Datei (pictures.tsx bindet sie ein): je Porträt ein Gadget-großes Bild mit Titel */
+export const PORTRAIT_PICTURES = Object.fromEntries(
+  Object.entries(PORTRAITS).map(([id, { px, title }]) => [id, () => <Grid px={px} kind="gadget" title={title} className="story-pic" />]),
+) as Record<PortraitPictureId, () => ReactElement>;

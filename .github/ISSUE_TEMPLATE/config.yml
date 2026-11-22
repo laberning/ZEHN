@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Häufige Fragen
+    url: https://github.com/laberning/ZEHN/blob/main/docs/spiel/faq.md
+    about: Y und Z vertauscht, Tablet, Ton, Fehler korrigieren – vielleicht steht die Antwort schon hier.
+  - name: Spielanleitung
+    url: https://github.com/laberning/ZEHN/blob/main/docs/spiel/anleitung.md
+    about: Die Tasten, dein erster Tag, Aufträge, Funk, Einsatz, Spielhalle und Garderobe.

@@ -1,0 +1,19 @@
+/* Einstieg: bindet alle Stylesheets in fester Reihenfolge ein (Grundlagen zuerst, LPC-Figuren zuletzt) */
+
+@import './base.css';
+@import './scene.css';
+@import './dialog.css';
+@import './funk.css';
+@import './keyboard.css';
+@import './typing.css';
+@import './hq.css';
+@import './mission.css';
+@import './seals.css';
+@import './badges.css';
+@import './exam.css';
+@import './arcade.css';
+@import './profiles.css';
+@import './akte.css';
+@import './credits.css';
+@import './fallakte.css';
+@import './lpc.css';

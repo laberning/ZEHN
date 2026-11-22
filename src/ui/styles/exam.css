@@ -1,0 +1,179 @@
+/* Einsatz (Prüfung): Baron mit Spruch, Zeitbalken, Firewall, Countdown, Hintertür */
+
+.exam-top {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.exam-top.panel {
+  margin-top: 10px;
+}
+/* der Countdown ist kurz breiter als schmale Fenster: nichts darf die Seite waagerecht scrollen lassen */
+.exam-screen {
+  overflow-x: clip;
+}
+.exam-screen > .center.panel {
+  max-width: 480px;
+  margin: 24px auto;
+}
+.villain {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+}
+.taunt {
+  max-width: 220px;
+  background: #2a0f18;
+  border: 1px solid #8b1e2f;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.exam-info {
+  flex: 1;
+}
+.exam-info h1 {
+  margin: 0;
+}
+.timer {
+  height: 12px;
+}
+.timer div {
+  height: 100%;
+  background: linear-gradient(90deg, var(--magenta), var(--cyan));
+  transition: width 0.1s linear;
+}
+.timer.low div {
+  background: var(--red);
+  animation: blink 0.5s steps(2) infinite;
+}
+.firewall {
+  display: flex;
+  gap: 4px;
+  margin: 16px 0 6px;
+}
+.firewall span {
+  flex: 1;
+  height: 26px;
+  border-radius: 4px;
+  background: repeating-linear-gradient(45deg, #2a1220 0 6px, #1c0d16 6px 12px);
+  border: 1px solid #5a1a36;
+}
+.firewall span.up {
+  background: linear-gradient(180deg, #5effb0, #1fae66);
+  border-color: var(--green);
+  box-shadow: 0 0 10px rgba(77, 255, 154, 0.5);
+  animation: pop 0.3s ease-out;
+}
+.countdown {
+  font-family: var(--pixel);
+  font-size: 7rem;
+  text-align: center;
+  color: var(--magenta);
+  text-shadow: 0 0 30px var(--magenta);
+  animation: pop 0.7s ease-out infinite;
+}
+.backdoor {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  max-width: 600px;
+  margin: 24px auto 0;
+  text-align: left;
+  border: 1px dashed var(--cyan);
+  border-radius: 12px;
+  padding: 12px;
+}
+.backdoor p {
+  margin: 0 0 8px;
+}
+
+/* Wenig Höhe: Kopf und Firewall-Leiste rücken zusammen, Baron wird kleiner */
+@media (max-height: 759px) {
+  .exam-top {
+    gap: 12px;
+  }
+  .exam-top.panel {
+    margin-top: 6px;
+    padding: 8px 14px;
+  }
+  .exam-top canvas,
+  .villain canvas,
+  .villain svg {
+    max-height: 64px;
+    width: auto;
+  }
+  .exam-info h1 {
+    font-size: 1.1rem;
+    margin: 0 0 2px;
+  }
+  .exam-info p {
+    margin: 2px 0;
+    font-size: 0.85rem;
+  }
+  .taunt {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+  .firewall {
+    margin: 8px 0 4px;
+  }
+  .firewall span {
+    height: 16px;
+  }
+}
+
+/* Schmal (Handy): Baron und Spruch über dem Ziel, sonst schneidet der Rand (overflow-x: clip) das Ziel ab */
+@media (max-width: 599px) {
+  .exam-top {
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 0;
+  }
+  .villain {
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+  .taunt {
+    flex: 1 1 160px;
+    max-width: 100%;
+  }
+  .exam-info {
+    min-width: 0;
+  }
+}
+
+/* Quer und niedrig mit Seitenleiste (Anordnung in typing.css): Baron über dem Spruch, darunter Titel, Ziel, Zeitbalken, Firewall */
+@media (max-height: 759px) and (min-aspect-ratio: 5/4) and (min-width: 700px) {
+  .with-side .exam-top {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+  .with-side .exam-top.panel {
+    margin-top: 0;
+    padding: 8px 10px;
+  }
+  .with-side .villain {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+  .with-side .villain canvas,
+  .with-side .villain svg {
+    align-self: center;
+  }
+  .with-side .taunt {
+    max-width: none;
+  }
+  .with-side .firewall {
+    margin: 0;
+  }
+  .with-side > .center.panel,
+  .with-side > .countdown {
+    grid-column: 2;
+    align-self: start;
+  }
+}

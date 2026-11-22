@@ -1,0 +1,3403 @@
+{
+ "source": {
+  "repo": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator.git",
+  "commit": "9bf06be193b053db256b2536824af426de046aa2"
+ },
+ "frame": 64,
+ "directions": [
+  "up",
+  "left",
+  "down",
+  "right"
+ ],
+ "anims": {
+  "idle": {
+   "frames": 2
+  },
+  "walk": {
+   "frames": 9
+  }
+ },
+ "parts": {
+  "body": {
+   "name": "Body Color",
+   "materials": [
+    "body"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 10,
+      "src": {
+       "idle": "assets/lpc/body_bodies_teen_idle__idle.72f965a9.png",
+       "walk": "assets/lpc/body_bodies_teen_walk__walk.712155ad.png"
+      }
+     }
+    ],
+    "female": [
+     {
+      "z": 10,
+      "src": {
+       "idle": "assets/lpc/body_bodies_female_idle__idle.d175a244.png",
+       "walk": "assets/lpc/body_bodies_female_walk__walk.234e3047.png"
+      }
+     }
+    ],
+    "male": [
+     {
+      "z": 10,
+      "src": {
+       "idle": "assets/lpc/body_bodies_male_idle__idle.64fde4de.png",
+       "walk": "assets/lpc/body_bodies_male_walk__walk.dd5c31b6.png"
+      }
+     }
+    ]
+   }
+  },
+  "head-female": {
+   "name": "Human Female",
+   "materials": [
+    "body",
+    "eye"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 100,
+      "src": {
+       "idle": "assets/lpc/head_heads_human_female_idle__idle.be3253ee.png",
+       "walk": "assets/lpc/head_heads_human_female_walk__walk.d8ef7640.png"
+      }
+     }
+    ],
+    "female": [
+     {
+      "z": 100,
+      "src": {
+       "idle": "assets/lpc/head_heads_human_female_idle__idle.be3253ee.png",
+       "walk": "assets/lpc/head_heads_human_female_walk__walk.d8ef7640.png"
+      }
+     }
+    ],
+    "male": [
+     {
+      "z": 100,
+      "src": {
+       "idle": "assets/lpc/head_heads_human_female_idle__idle.be3253ee.png",
+       "walk": "assets/lpc/head_heads_human_female_walk__walk.d8ef7640.png"
+      }
+     }
+    ]
+   }
+  },
+  "head-male": {
+   "name": "Human Male",
+   "materials": [
+    "body",
+    "eye"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 100,
+      "src": {
+       "idle": "assets/lpc/head_heads_human_male_idle__idle.3b58db14.png",
+       "walk": "assets/lpc/head_heads_human_male_walk__walk.a5a3def5.png"
+      }
+     }
+    ],
+    "female": [
+     {
+      "z": 100,
+      "src": {
+       "idle": "assets/lpc/head_heads_human_male_idle__idle.3b58db14.png",
+       "walk": "assets/lpc/head_heads_human_male_walk__walk.a5a3def5.png"
+      }
+     }
+    ],
+    "male": [
+     {
+      "z": 100,
+      "src": {
+       "idle": "assets/lpc/head_heads_human_male_idle__idle.3b58db14.png",
+       "walk": "assets/lpc/head_heads_human_male_walk__walk.a5a3def5.png"
+      }
+     }
+    ]
+   }
+  },
+  "head-elderly": {
+   "name": "Human Female Elderly",
+   "materials": [
+    "body",
+    "eye"
+   ],
+   "layers": {
+    "female": [
+     {
+      "z": 100,
+      "src": {
+       "idle": "assets/lpc/head_heads_human_female_elderly_idle__idle.9b4b46fd.png",
+       "walk": "assets/lpc/head_heads_human_female_elderly_walk__walk.773f50a2.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-long": {
+   "name": "Long",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_long_adult_idle__idle.7da4ce21.png",
+       "walk": "assets/lpc/hair_long_adult_walk__walk.49c57aa1.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-bob": {
+   "name": "Bob",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_bob_adult_idle__idle.e87b0705.png",
+       "walk": "assets/lpc/hair_bob_adult_walk__walk.2958a21d.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-plain": {
+   "name": "Plain",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_plain_adult_idle__idle.ba7594fa.png",
+       "walk": "assets/lpc/hair_plain_adult_walk__walk.03359327.png"
+      }
+     }
+    ],
+    "male": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_plain_adult_idle__idle.ba7594fa.png",
+       "walk": "assets/lpc/hair_plain_adult_walk__walk.03359327.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-messy": {
+   "name": "Messy1",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_messy1_adult_idle__idle.a5dbb4c3.png",
+       "walk": "assets/lpc/hair_messy1_adult_walk__walk.21dcc5b2.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-bun": {
+   "name": "Bangs bun",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "female": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_bangs_bun_adult_idle__idle.4c0822f6.png",
+       "walk": "assets/lpc/hair_bangs_bun_adult_walk__walk.ef444c0a.png"
+      }
+     }
+    ]
+   }
+  },
+  "mustache": {
+   "name": "Handlebar Mustache",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "male": [
+     {
+      "z": 111,
+      "src": {
+       "idle": "assets/lpc/beards_mustache_handlebar_idle__idle.2a19d73a.png",
+       "walk": "assets/lpc/beards_mustache_handlebar_walk__walk.27845945.png"
+      }
+     }
+    ]
+   }
+  },
+  "shirt-tshirt": {
+   "name": "TShirt",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 35,
+      "src": {
+       "idle": "assets/lpc/torso_clothes_shortsleeve_tshirt_teen_idle__idle.64cf006e.png",
+       "walk": "assets/lpc/torso_clothes_shortsleeve_tshirt_teen_walk__walk.7d4bf33f.png"
+      }
+     }
+    ]
+   }
+  },
+  "shirt-polo": {
+   "name": "Shortsleeve Polo",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 35,
+      "src": {
+       "idle": "assets/lpc/torso_clothes_shortsleeve_shortsleeve_polo_teen_idle__idle.e62aaabf.png",
+       "walk": "assets/lpc/torso_clothes_shortsleeve_shortsleeve_polo_teen_walk__walk.92aa8dba.png"
+      }
+     }
+    ]
+   }
+  },
+  "shirt-cardigan": {
+   "name": "Cardigan",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 35,
+      "src": {
+       "idle": "assets/lpc/torso_clothes_longsleeve_longsleeve2_cardigan_teen_idle__idle.0094616d.png",
+       "walk": "assets/lpc/torso_clothes_longsleeve_longsleeve2_cardigan_teen_walk__walk.edef7e2b.png"
+      }
+     }
+    ]
+   }
+  },
+  "shirt-longsleeve": {
+   "name": "Longsleeve",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 35,
+      "src": {
+       "idle": "assets/lpc/torso_clothes_longsleeve_longsleeve_teen_idle__idle.6cd2cbe9.png",
+       "walk": "assets/lpc/torso_clothes_longsleeve_longsleeve_teen_walk__walk.67f454f3.png"
+      }
+     }
+    ],
+    "female": [
+     {
+      "z": 35,
+      "src": {
+       "idle": "assets/lpc/torso_clothes_longsleeve_longsleeve_female_idle__idle.c308d20b.png",
+       "walk": "assets/lpc/torso_clothes_longsleeve_longsleeve_female_walk__walk.072b4d60.png"
+      }
+     }
+    ],
+    "male": [
+     {
+      "z": 35,
+      "src": {
+       "idle": "assets/lpc/torso_clothes_longsleeve_longsleeve_male_idle__idle.23914497.png",
+       "walk": "assets/lpc/torso_clothes_longsleeve_longsleeve_male_walk__walk.937dae20.png"
+      }
+     }
+    ]
+   }
+  },
+  "necktie": {
+   "name": "Necktie",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 90,
+      "src": {
+       "idle": "assets/lpc/neck_tie_necktie_female_idle__idle.f30f872c.png",
+       "walk": "assets/lpc/neck_tie_necktie_female_walk__walk.77c6fe5b.png"
+      }
+     }
+    ]
+   }
+  },
+  "bowtie": {
+   "name": "Bowtie",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "male": [
+     {
+      "z": 90,
+      "src": {
+       "idle": "assets/lpc/neck_tie_bowtie_adult_idle__idle.5b577605.png",
+       "walk": "assets/lpc/neck_tie_bowtie_adult_walk__walk.e52feefa.png"
+      }
+     }
+    ],
+    "teen": [
+     {
+      "z": 90,
+      "src": {
+       "idle": "assets/lpc/neck_tie_bowtie_adult_idle__idle.5b577605.png",
+       "walk": "assets/lpc/neck_tie_bowtie_adult_walk__walk.e52feefa.png"
+      }
+     }
+    ]
+   }
+  },
+  "belt": {
+   "name": "Leather Belt",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 70,
+      "src": {
+       "idle": "assets/lpc/torso_waist_belt_leather_female_walk_white__idle.826b7a24.png",
+       "walk": "assets/lpc/torso_waist_belt_leather_female_walk_white__walk.a5455933.png"
+      }
+     }
+    ]
+   }
+  },
+  "suspenders": {
+   "name": "Suspenders",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 38,
+      "src": {
+       "idle": "assets/lpc/torso_aprons_suspenders_teen_idle_white__idle.6a127653.png",
+       "walk": "assets/lpc/torso_aprons_suspenders_teen_walk_white__walk.84391e29.png"
+      }
+     }
+    ]
+   }
+  },
+  "epaulets": {
+   "name": "Epaulets",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 60,
+      "src": {
+       "idle": "assets/lpc/shoulders_epaulets_thin_idle__idle.c615c71b.png",
+       "walk": "assets/lpc/shoulders_epaulets_thin_walk__walk.cd4e16d2.png"
+      }
+     }
+    ]
+   }
+  },
+  "cuffs": {
+   "name": "Cuffs",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 70,
+      "src": {
+       "idle": "assets/lpc/arms_wrists_cuffs_thin_idle__idle.95fa4bd0.png",
+       "walk": "assets/lpc/arms_wrists_cuffs_thin_walk__walk.dd84d8f1.png"
+      }
+     }
+    ]
+   }
+  },
+  "pants": {
+   "name": "Pants",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 20,
+      "src": {
+       "idle": "assets/lpc/legs_pants_thin_idle__idle.cf86e7b5.png",
+       "walk": "assets/lpc/legs_pants_thin_walk__walk.bb80c998.png"
+      }
+     }
+    ],
+    "female": [
+     {
+      "z": 20,
+      "src": {
+       "idle": "assets/lpc/legs_pants_thin_idle__idle.cf86e7b5.png",
+       "walk": "assets/lpc/legs_pants_thin_walk__walk.bb80c998.png"
+      }
+     }
+    ],
+    "male": [
+     {
+      "z": 20,
+      "src": {
+       "idle": "assets/lpc/legs_pants_male_idle__idle.72c9d47f.png",
+       "walk": "assets/lpc/legs_pants_male_walk__walk.4be2b42f.png"
+      }
+     }
+    ]
+   }
+  },
+  "pants-formal": {
+   "name": "Formal Pants",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "male": [
+     {
+      "z": 20,
+      "src": {
+       "idle": "assets/lpc/legs_formal_male_idle__idle.e244bdc5.png",
+       "walk": "assets/lpc/legs_formal_male_walk__walk.d96ca90a.png"
+      }
+     }
+    ]
+   }
+  },
+  "shoes": {
+   "name": "Basic Shoes",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 15,
+      "src": {
+       "idle": "assets/lpc/feet_shoes_basic_thin_idle__idle.92de6b22.png",
+       "walk": "assets/lpc/feet_shoes_basic_thin_walk__walk.531440f8.png"
+      }
+     }
+    ],
+    "female": [
+     {
+      "z": 15,
+      "src": {
+       "idle": "assets/lpc/feet_shoes_basic_thin_idle__idle.92de6b22.png",
+       "walk": "assets/lpc/feet_shoes_basic_thin_walk__walk.531440f8.png"
+      }
+     }
+    ],
+    "male": [
+     {
+      "z": 15,
+      "src": {
+       "idle": "assets/lpc/feet_shoes_basic_male_idle__idle.2e205d64.png",
+       "walk": "assets/lpc/feet_shoes_basic_male_walk__walk.48349ac6.png"
+      }
+     }
+    ]
+   }
+  },
+  "pants-shorts": {
+   "name": "Shorts",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 20,
+      "src": {
+       "idle": "assets/lpc/legs_shorts_shorts_thin_idle__idle.b9e30867.png",
+       "walk": "assets/lpc/legs_shorts_shorts_thin_walk__walk.cd72876a.png"
+      }
+     }
+    ]
+   }
+  },
+  "skirt": {
+   "name": "Straight skirt",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 20,
+      "src": {
+       "idle": "assets/lpc/legs_skirts_straight_thin_idle__idle.0fb689ea.png",
+       "walk": "assets/lpc/legs_skirts_straight_thin_walk__walk.e1a8d270.png"
+      }
+     }
+    ]
+   }
+  },
+  "pants-cuffed": {
+   "name": "Cuffed Pants",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 20,
+      "src": {
+       "idle": "assets/lpc/legs_cuffed_thin_idle__idle.76217c1f.png",
+       "walk": "assets/lpc/legs_cuffed_thin_walk__walk.0f71da5c.png"
+      }
+     }
+    ]
+   }
+  },
+  "leggings": {
+   "name": "Leggings",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 20,
+      "src": {
+       "idle": "assets/lpc/legs_leggings_thin_idle__idle.81441a7f.png",
+       "walk": "assets/lpc/legs_leggings_thin_walk__walk.f07704f4.png"
+      }
+     }
+    ]
+   }
+  },
+  "pants-striped": {
+   "name": "Striped Formal Pants",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 20,
+      "src": {
+       "idle": "assets/lpc/legs_formal_striped_thin_idle__idle.3422d2cc.png",
+       "walk": "assets/lpc/legs_formal_striped_thin_walk__walk.1bd4eb9c.png"
+      }
+     }
+    ]
+   }
+  },
+  "shoes-revised": {
+   "name": "Revised Shoes",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 15,
+      "src": {
+       "idle": "assets/lpc/feet_shoes_revised_thin_idle__idle.2b833f97.png",
+       "walk": "assets/lpc/feet_shoes_revised_thin_walk__walk.29814199.png"
+      }
+     }
+    ]
+   }
+  },
+  "sandals": {
+   "name": "Sandals",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 15,
+      "src": {
+       "idle": "assets/lpc/feet_sandals_thin_idle__idle.06764ddf.png",
+       "walk": "assets/lpc/feet_sandals_thin_walk__walk.4a251a5b.png"
+      }
+     }
+    ]
+   }
+  },
+  "socks-high": {
+   "name": "High Socks",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 14,
+      "src": {
+       "idle": "assets/lpc/feet_socks_high_thin_idle__idle.641b60ad.png",
+       "walk": "assets/lpc/feet_socks_high_thin_walk__walk.44583e71.png"
+      }
+     }
+    ]
+   }
+  },
+  "boots-fold": {
+   "name": "Folded Rim Boots",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 25,
+      "src": {
+       "idle": "assets/lpc/feet_boots_fold_thin_idle__idle.f6e67d8a.png",
+       "walk": "assets/lpc/feet_boots_fold_thin_walk__walk.21e1be9b.png"
+      }
+     }
+    ]
+   }
+  },
+  "boots-rim": {
+   "name": "Rimmed Boots",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 25,
+      "src": {
+       "idle": "assets/lpc/feet_boots_rimmed_thin_idle__idle.889035c3.png",
+       "walk": "assets/lpc/feet_boots_rimmed_thin_walk__walk.fe25e072.png"
+      }
+     }
+    ]
+   }
+  },
+  "boots-basic": {
+   "name": "Basic Boots",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 25,
+      "src": {
+       "idle": "assets/lpc/feet_boots_basic_thin_idle__idle.c70bc2e5.png",
+       "walk": "assets/lpc/feet_boots_basic_thin_walk__walk.0ade33d7.png"
+      }
+     }
+    ]
+   }
+  },
+  "apron": {
+   "name": "Apron",
+   "materials": [],
+   "layers": {
+    "female": [
+     {
+      "z": 40,
+      "src": {
+       "idle": "assets/lpc/torso_aprons_apron_female_walk_white__idle.eae2da54.png",
+       "walk": "assets/lpc/torso_aprons_apron_female_walk_white__walk.f3c73bab.png"
+      }
+     }
+    ]
+   }
+  },
+  "glasses-round": {
+   "name": "Round Glasses",
+   "materials": [],
+   "layers": {
+    "teen": [
+     {
+      "z": 115,
+      "src": {
+       "idle": "assets/lpc/facial_glasses_round_adult_idle_gray__idle.ade116cc.png",
+       "walk": "assets/lpc/facial_glasses_round_adult_walk_gray__walk.4bc3ee79.png"
+      }
+     }
+    ],
+    "female": [
+     {
+      "z": 115,
+      "src": {
+       "idle": "assets/lpc/facial_glasses_round_adult_idle_gray__idle.ade116cc.png",
+       "walk": "assets/lpc/facial_glasses_round_adult_walk_gray__walk.4bc3ee79.png"
+      }
+     }
+    ],
+    "male": [
+     {
+      "z": 115,
+      "src": {
+       "idle": "assets/lpc/facial_glasses_round_adult_idle_gray__idle.ade116cc.png",
+       "walk": "assets/lpc/facial_glasses_round_adult_walk_gray__walk.4bc3ee79.png"
+      }
+     }
+    ]
+   }
+  },
+  "cape": {
+   "name": "Solid",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "male": [
+     {
+      "z": 5,
+      "src": {
+       "idle": "assets/lpc/cape_solid_bg_idle__idle.72932051.png",
+       "walk": "assets/lpc/cape_solid_bg_walk__walk.13e6d1fc.png"
+      }
+     },
+     {
+      "z": 85,
+      "src": {
+       "idle": "assets/lpc/cape_solid_fg_idle__idle.d92dd422.png",
+       "walk": "assets/lpc/cape_solid_fg_walk__walk.13f0fb78.png"
+      }
+     }
+    ],
+    "teen": [
+     {
+      "z": 5,
+      "src": {
+       "idle": "assets/lpc/cape_solid_bg_idle__idle.72932051.png",
+       "walk": "assets/lpc/cape_solid_bg_walk__walk.13e6d1fc.png"
+      }
+     },
+     {
+      "z": 85,
+      "src": {
+       "idle": "assets/lpc/cape_solid_fg_idle__idle.d92dd422.png",
+       "walk": "assets/lpc/cape_solid_fg_walk__walk.13f0fb78.png"
+      }
+     }
+    ]
+   }
+  },
+  "vest": {
+   "name": "Vest",
+   "materials": [],
+   "layers": {
+    "male": [
+     {
+      "z": 45,
+      "src": {
+       "idle": "assets/lpc/torso_clothes_vest_male_idle_maroon__idle.4fe301af.png",
+       "walk": "assets/lpc/torso_clothes_vest_male_walk_maroon__walk.2c6f6fd5.png"
+      }
+     }
+    ]
+   }
+  },
+  "tophat": {
+   "name": "Formal Tophat",
+   "materials": [],
+   "layers": {
+    "male": [
+     {
+      "z": 130,
+      "src": {
+       "idle": "assets/lpc/hat_formal_tophat_adult_idle_black__idle.af716f13.png",
+       "walk": "assets/lpc/hat_formal_tophat_adult_walk_black__walk.d699938f.png"
+      }
+     }
+    ]
+   }
+  },
+  "monocle": {
+   "name": "Right Monocle",
+   "materials": [],
+   "layers": {
+    "male": [
+     {
+      "z": 115,
+      "src": {
+       "idle": "assets/lpc/facial_monocle_right_adult_idle_gold__idle.520463e1.png",
+       "walk": "assets/lpc/facial_monocle_right_adult_walk_gold__walk.141d0ef5.png"
+      }
+     }
+    ]
+   }
+  },
+  "glasses-nerd": {
+   "name": "Nerd Glasses",
+   "materials": [],
+   "layers": {
+    "teen": [
+     {
+      "z": 115,
+      "src": {
+       "idle": "assets/lpc/facial_glasses_nerd_adult_idle_black__idle.405a2367.png",
+       "walk": "assets/lpc/facial_glasses_nerd_adult_walk_black__walk.f2ebaf12.png"
+      }
+     }
+    ]
+   }
+  },
+  "glasses-sun": {
+   "name": "Sunglasses",
+   "materials": [],
+   "layers": {
+    "teen": [
+     {
+      "z": 115,
+      "src": {
+       "idle": "assets/lpc/facial_glasses_sunglasses_adult_idle_sunglasses__idle.f2f3ea7c.png",
+       "walk": "assets/lpc/facial_glasses_sunglasses_adult_walk_sunglasses__walk.ec99c9da.png"
+      }
+     }
+    ]
+   }
+  },
+  "glasses-shades": {
+   "name": "Shades",
+   "materials": [],
+   "layers": {
+    "teen": [
+     {
+      "z": 115,
+      "src": {
+       "idle": "assets/lpc/facial_glasses_shades_adult_idle_black__idle.b5f8a4c2.png",
+       "walk": "assets/lpc/facial_glasses_shades_adult_walk_black__walk.0e5e572b.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-afro": {
+   "name": "Afro",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_afro_adult_idle__idle.0c0bfa1f.png",
+       "walk": "assets/lpc/hair_afro_adult_walk__walk.c99fac19.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-natural": {
+   "name": "Natural",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_natural_adult_idle__idle.269a1791.png",
+       "walk": "assets/lpc/hair_natural_adult_walk__walk.3fc4cb0f.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-cornrows": {
+   "name": "Cornrows",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_cornrows_adult_idle__idle.442f97bc.png",
+       "walk": "assets/lpc/hair_cornrows_adult_walk__walk.784736d0.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-twists": {
+   "name": "Twists straight",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_twists_straight_adult_idle__idle.5c9003bb.png",
+       "walk": "assets/lpc/hair_twists_straight_adult_walk__walk.d09043fe.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-dreads": {
+   "name": "Dreadlocks long",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_dreadlocks_long_adult_idle__idle.fc8c0181.png",
+       "walk": "assets/lpc/hair_dreadlocks_long_adult_walk__walk.6abdf68e.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-curly": {
+   "name": "Curly short",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_curly_short_adult_idle__idle.3a9fc25d.png",
+       "walk": "assets/lpc/hair_curly_short_adult_walk__walk.27fa335c.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-curly-long": {
+   "name": "Curly long",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_curly_long_adult_idle__idle.b0e83aa8.png",
+       "walk": "assets/lpc/hair_curly_long_adult_walk__walk.af6c2d0c.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-braid": {
+   "name": "Braid",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 9,
+      "src": {
+       "idle": "assets/lpc/hair_braid_adult_bg_idle__idle.61a7950e.png",
+       "walk": "assets/lpc/hair_braid_adult_bg_walk__walk.c871548b.png"
+      }
+     },
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_braid_adult_fg_idle__idle.52b026e0.png",
+       "walk": "assets/lpc/hair_braid_adult_fg_walk__walk.e63a9a04.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-ponytail": {
+   "name": "Ponytail",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 9,
+      "src": {
+       "idle": "assets/lpc/hair_ponytail_adult_bg_idle__idle.be699aee.png",
+       "walk": "assets/lpc/hair_ponytail_adult_bg_walk__walk.17936c3d.png"
+      }
+     },
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_ponytail_adult_fg_idle__idle.8f5d5522.png",
+       "walk": "assets/lpc/hair_ponytail_adult_fg_walk__walk.083d9343.png"
+      }
+     }
+    ]
+   }
+  },
+  "hair-spiked": {
+   "name": "Spiked",
+   "materials": [
+    "hair"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hair_spiked_adult_idle__idle.88693642.png",
+       "walk": "assets/lpc/hair_spiked_adult_walk__walk.c4e40936.png"
+      }
+     }
+    ]
+   }
+  },
+  "vest-buttoned": {
+   "name": "Sleeveless 2 Buttoned",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 35,
+      "src": {
+       "idle": "assets/lpc/torso_clothes_sleeveless_sleeveless2_buttoned_teen_idle__idle.210901f2.png",
+       "walk": "assets/lpc/torso_clothes_sleeveless_sleeveless2_buttoned_teen_walk__walk.cbbf76de.png"
+      }
+     }
+    ]
+   }
+  },
+  "bandana": {
+   "name": "Bandana",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 120,
+      "src": {
+       "idle": "assets/lpc/hat_cloth_bandana_adult_idle__idle.6332fe0b.png",
+       "walk": "assets/lpc/hat_cloth_bandana_adult_walk__walk.c9ef9285.png"
+      }
+     }
+    ]
+   }
+  },
+  "headband": {
+   "name": "Thick Headband",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 125,
+      "src": {
+       "idle": "assets/lpc/hat_headband_thick_adult_idle__idle.782d3c8d.png",
+       "walk": "assets/lpc/hat_headband_thick_adult_walk__walk.86d4f901.png"
+      }
+     }
+    ]
+   }
+  },
+  "scarf": {
+   "name": "Scarf",
+   "materials": [
+    "cloth"
+   ],
+   "layers": {
+    "teen": [
+     {
+      "z": 90,
+      "src": {
+       "idle": "assets/lpc/neck_scarf_idle__idle.15698c4b.png",
+       "walk": "assets/lpc/neck_scarf_walk__walk.8b0b1a60.png"
+      }
+     }
+    ]
+   }
+  },
+  "cap-leather": {
+   "name": "Leather Cap",
+   "materials": [],
+   "layers": {
+    "teen": [
+     {
+      "z": 130,
+      "src": {
+       "idle": "assets/lpc/hat_cloth_leather_cap_adult_idle__idle.69699809.png",
+       "walk": "assets/lpc/hat_cloth_leather_cap_adult_walk__walk.61461241.png"
+      }
+     }
+    ]
+   }
+  },
+  "bowler": {
+   "name": "Formal Bowler Hat",
+   "materials": [],
+   "layers": {
+    "teen": [
+     {
+      "z": 130,
+      "src": {
+       "idle": "assets/lpc/hat_formal_bowler_adult_idle_charcoal__idle.7d68a6f7.png",
+       "walk": "assets/lpc/hat_formal_bowler_adult_walk_charcoal__walk.88bd574a.png"
+      }
+     }
+    ]
+   }
+  },
+  "tricorne": {
+   "name": "Tricorne",
+   "materials": [],
+   "layers": {
+    "teen": [
+     {
+      "z": 130,
+      "src": {
+       "idle": "assets/lpc/hat_pirate_tricorne_basic_adult_idle_black__idle.f2b684d2.png",
+       "walk": "assets/lpc/hat_pirate_tricorne_basic_adult_walk_black__walk.47aa3f6c.png"
+      }
+     }
+    ]
+   }
+  },
+  "eyepatch": {
+   "name": "Eyepatch Right",
+   "materials": [],
+   "layers": {
+    "teen": [
+     {
+      "z": 115,
+      "src": {
+       "idle": "assets/lpc/facial_patches_eyepatch_right_adult_idle_black__idle.cfe6cb00.png",
+       "walk": "assets/lpc/facial_patches_eyepatch_right_adult_walk_black__walk.47d41ee1.png"
+      }
+     }
+    ]
+   }
+  }
+ },
+ "palettes": {
+  "body": {
+   "base": "light",
+   "variants": {
+    "light": [
+     "#271920",
+     "#99423c",
+     "#cc8665",
+     "#E4A47C",
+     "#F9D5BA",
+     "#FAECE7"
+    ],
+    "amber": [
+     "#281716",
+     "#9E3E37",
+     "#D28144",
+     "#EA9F54",
+     "#FDD082",
+     "#FBE7A4"
+    ],
+    "olive": [
+     "#271920",
+     "#442725",
+     "#7F4C31",
+     "#AE6B3F",
+     "#D38B59",
+     "#E4A47C"
+    ],
+    "taupe": [
+     "#271920",
+     "#503734",
+     "#785946",
+     "#936849",
+     "#BA8454",
+     "#C7935F"
+    ],
+    "bronze": [
+     "#1A1213",
+     "#442725",
+     "#644133",
+     "#7F4C31",
+     "#AE6B3F",
+     "#D38B59"
+    ],
+    "brown": [
+     "#120E10",
+     "#412B29",
+     "#5F4539",
+     "#76513A",
+     "#9C663E",
+     "#B8773F"
+    ],
+    "black": [
+     "#000000",
+     "#1A1213",
+     "#2E1F1C",
+     "#442725",
+     "#603429",
+     "#7F4C31"
+    ],
+    "blue": [
+     "#16171B",
+     "#46425D",
+     "#586B90",
+     "#748DA4",
+     "#A9C9CA",
+     "#C8E8E8"
+    ],
+    "bright_green": [
+     "#02280E",
+     "#06410E",
+     "#255E1D",
+     "#5B8F11",
+     "#75AE23",
+     "#99D248"
+    ],
+    "dark_green": [
+     "#011708",
+     "#02280E",
+     "#06410E",
+     "#255E1D",
+     "#508A48",
+     "#509E59"
+    ],
+    "fur_black": [
+     "#040510",
+     "#0A0E1B",
+     "#0D1621",
+     "#14212C",
+     "#1B2C36",
+     "#154259"
+    ],
+    "fur_brown": [
+     "#000000",
+     "#1E120E",
+     "#251B19",
+     "#473730",
+     "#624135",
+     "#975B5A"
+    ],
+    "fur_copper": [
+     "#0F0506",
+     "#300500",
+     "#6A1A00",
+     "#9C3B01",
+     "#CC6901",
+     "#FAA301"
+    ],
+    "fur_gold": [
+     "#200808",
+     "#552B15",
+     "#AC5D1F",
+     "#E09E2B",
+     "#FCCF56",
+     "#FFE67D"
+    ],
+    "fur_grey": [
+     "#0F0F11",
+     "#36363F",
+     "#55585F",
+     "#6A6E74",
+     "#909699",
+     "#B8BBBC"
+    ],
+    "fur_tan": [
+     "#222121",
+     "#3A200E",
+     "#663A1A",
+     "#975F43",
+     "#B88751",
+     "#DB8E60"
+    ],
+    "fur_white": [
+     "#17171A",
+     "#36363F",
+     "#484E57",
+     "#8B9498",
+     "#B8BBBC",
+     "#D8DCDC"
+    ],
+    "green": [
+     "#140C09",
+     "#09320B",
+     "#19541D",
+     "#228236",
+     "#39AA4E",
+     "#53BF71"
+    ],
+    "lavender": [
+     "#16171B",
+     "#393B44",
+     "#787C8F",
+     "#A0A5BC",
+     "#C9D0EE",
+     "#FBECE6"
+    ],
+    "pale_green": [
+     "#271920",
+     "#314829",
+     "#456238",
+     "#5F874D",
+     "#86B278",
+     "#ADCCA6"
+    ],
+    "zombie": [
+     "#281820",
+     "#6B5C40",
+     "#928364",
+     "#A79778",
+     "#C5B38F",
+     "#DBCBAB"
+    ],
+    "zombie_green": [
+     "#101925",
+     "#074337",
+     "#4A7A69",
+     "#839F6E",
+     "#D4D887",
+     "#F2F0C4"
+    ]
+   }
+  },
+  "eye": {
+   "base": "blue",
+   "variants": {
+    "blue": [
+     "#2a3c49",
+     "#5686ae",
+     "#57cee4"
+    ],
+    "green": [
+     "#2b4b29",
+     "#53b351",
+     "#84ec50"
+    ],
+    "purple": [
+     "#710862",
+     "#b90da0",
+     "#eba0e0"
+    ],
+    "red": [
+     "#532421",
+     "#cb4a39",
+     "#ff3d62"
+    ],
+    "orange": [
+     "#a45227",
+     "#be734b",
+     "#ea9b71"
+    ],
+    "yellow": [
+     "#b69953",
+     "#d9bf46",
+     "#fedf47"
+    ],
+    "brown": [
+     "#232017",
+     "#544c2e",
+     "#7e4e20"
+    ],
+    "gray": [
+     "#3d3c37",
+     "#8b8979",
+     "#ada18f"
+    ]
+   }
+  },
+  "hair": {
+   "base": "orange",
+   "variants": {
+    "orange": [
+     "#260D14",
+     "#6A1108",
+     "#A42600",
+     "#BF4000",
+     "#E55600",
+     "#FF8A00"
+    ],
+    "ash": [
+     "#2D061B",
+     "#642442",
+     "#935065",
+     "#C18F8A",
+     "#EDDF95",
+     "#FFF1C1"
+    ],
+    "platinum": [
+     "#1C0E06",
+     "#7D5D5D",
+     "#A87D52",
+     "#C0AB81",
+     "#EDDF95",
+     "#F6F6F3"
+    ],
+    "white": [
+     "#1D1D21",
+     "#484E57",
+     "#8B9498",
+     "#B8BBBC",
+     "#D8DCDC",
+     "#FFFFFF"
+    ],
+    "gray": [
+     "#0E0E0E",
+     "#292929",
+     "#4B4B4B",
+     "#777777",
+     "#AAAAAA",
+     "#D9D9D9"
+    ],
+    "blonde": [
+     "#331313",
+     "#552B15",
+     "#AC5D1F",
+     "#E09E2B",
+     "#FCCF56",
+     "#FFE67D"
+    ],
+    "sandy": [
+     "#1C0E06",
+     "#633E2C",
+     "#99622D",
+     "#BF9D5A",
+     "#EDDC7E",
+     "#F6F6C2"
+    ],
+    "strawberry": [
+     "#300700",
+     "#6A2800",
+     "#9C5900",
+     "#CCA000",
+     "#FAF080",
+     "#F6F6C2"
+    ],
+    "gold": [
+     "#5C0D00",
+     "#902900",
+     "#E47100",
+     "#FFA913",
+     "#FFE453",
+     "#EEFE7E"
+    ],
+    "ginger": [
+     "#300500",
+     "#6A1A00",
+     "#9C3B01",
+     "#CC6901",
+     "#FAA301",
+     "#FFE01E"
+    ],
+    "carrot": [
+     "#5A1500",
+     "#8A2000",
+     "#AC2800",
+     "#EC673E",
+     "#F68764",
+     "#FFB39C"
+    ],
+    "redhead": [
+     "#260D14",
+     "#3E111A",
+     "#73171E",
+     "#9E1F1F",
+     "#C7341B",
+     "#E74716"
+    ],
+    "red": [
+     "#300000",
+     "#870000",
+     "#A40712",
+     "#CB0000",
+     "#E21414",
+     "#F1583A"
+    ],
+    "light_brown": [
+     "#1A0E04",
+     "#301B07",
+     "#60350F",
+     "#7D4513",
+     "#AE682A",
+     "#C88D58"
+    ],
+    "chestnut": [
+     "#200C0D",
+     "#3A130E",
+     "#63200B",
+     "#81310A",
+     "#B6550E",
+     "#D28102"
+    ],
+    "dark_brown": [
+     "#050100",
+     "#160701",
+     "#290E02",
+     "#421603",
+     "#5F1F04",
+     "#792806"
+    ],
+    "dark_gray": [
+     "#000000",
+     "#0E0E0E",
+     "#1B1B1B",
+     "#3B3B3B",
+     "#7C7C7C",
+     "#C1C1C1"
+    ],
+    "black": [
+     "#000000",
+     "#080A0A",
+     "#101414",
+     "#1C2222",
+     "#31313E",
+     "#4A5057"
+    ],
+    "raven": [
+     "#010107",
+     "#040B18",
+     "#061421",
+     "#071F2A",
+     "#0D384D",
+     "#1A5369"
+    ],
+    "rose": [
+     "#30051F",
+     "#6A1E4B",
+     "#9C4373",
+     "#CC789D",
+     "#FABBC6",
+     "#FAE1E5"
+    ],
+    "pink": [
+     "#330410",
+     "#71043A",
+     "#B60A68",
+     "#E941AA",
+     "#E976C4",
+     "#EA95D5"
+    ],
+    "purple": [
+     "#13112D",
+     "#2B225A",
+     "#402E82",
+     "#7141B2",
+     "#A966DD",
+     "#D085ED"
+    ],
+    "violet": [
+     "#1E032E",
+     "#30035C",
+     "#380392",
+     "#3C07D8",
+     "#5662F3",
+     "#5792F2"
+    ],
+    "navy": [
+     "#180716",
+     "#20102B",
+     "#281E41",
+     "#322D6A",
+     "#3C49AD",
+     "#466AC9"
+    ],
+    "blue": [
+     "#000027",
+     "#00005E",
+     "#000091",
+     "#0041B4",
+     "#0074CB",
+     "#1E85EF"
+    ],
+    "green": [
+     "#000400",
+     "#001400",
+     "#002D00",
+     "#005000",
+     "#007C00",
+     "#00A700"
+    ]
+   }
+  },
+  "cloth": {
+   "base": "white",
+   "variants": {
+    "brown": [
+     "#1d131e",
+     "#411E05",
+     "#4B2B13",
+     "#62351C",
+     "#744B30",
+     "#996B4A"
+    ],
+    "leather": [
+     "#2b1c1d",
+     "#311210",
+     "#4B2B13",
+     "#704325",
+     "#75502D",
+     "#9A6F37"
+    ],
+    "walnut": [
+     "#1d0f0e",
+     "#3e2613",
+     "#62351c",
+     "#744b30",
+     "#996b4a",
+     "#a17c50"
+    ],
+    "yellow": [
+     "#301723",
+     "#5F2F25",
+     "#BA5B23",
+     "#D99431",
+     "#F3C03F",
+     "#FFE360"
+    ],
+    "tan": [
+     "#3e2613",
+     "#684415",
+     "#986A20",
+     "#B78C41",
+     "#B7996A",
+     "#CFC587"
+    ],
+    "orange": [
+     "#301723",
+     "#5F1D1B",
+     "#9C3F23",
+     "#D75B1A",
+     "#EF7E19",
+     "#FFA749"
+    ],
+    "rose": [
+     "#1d131e",
+     "#301723",
+     "#562323",
+     "#77372B",
+     "#8A3D28",
+     "#B05F3C"
+    ],
+    "maroon": [
+     "#1d131e",
+     "#400B1F",
+     "#551C22",
+     "#682121",
+     "#832121",
+     "#AE424A"
+    ],
+    "red": [
+     "#1d131e",
+     "#400B1F",
+     "#651117",
+     "#82171C",
+     "#AB1E1E",
+     "#CD2429"
+    ],
+    "pink": [
+     "#1d131e",
+     "#54242E",
+     "#6C3536",
+     "#AE424A",
+     "#C36072",
+     "#E08080"
+    ],
+    "lavender": [
+     "#13112d",
+     "#2B225A",
+     "#402E82",
+     "#7141B2",
+     "#A966DD",
+     "#D085ED"
+    ],
+    "purple": [
+     "#180716",
+     "#13112D",
+     "#261044",
+     "#411357",
+     "#621E78",
+     "#813089"
+    ],
+    "blue": [
+     "#180716",
+     "#281E41",
+     "#322D6A",
+     "#3C49AD",
+     "#466AC9",
+     "#61A0EF"
+    ],
+    "navy": [
+     "#180716",
+     "#20102B",
+     "#281E41",
+     "#322D6A",
+     "#3C49AD",
+     "#466AC9"
+    ],
+    "teal": [
+     "#180716",
+     "#1B2B47",
+     "#0E4E72",
+     "#156C99",
+     "#0098B2",
+     "#00CFDF"
+    ],
+    "bluegray": [
+     "#11150b",
+     "#0B2B28",
+     "#2E403A",
+     "#315B49",
+     "#557E85",
+     "#79979D"
+    ],
+    "forest": [
+     "#09131d",
+     "#07391D",
+     "#0B1F25",
+     "#0B2B28",
+     "#134507",
+     "#1B5502"
+    ],
+    "green": [
+     "#101820",
+     "#192832",
+     "#0B5C2F",
+     "#214437",
+     "#2F8136",
+     "#64A42C"
+    ],
+    "white": [
+     "#281820",
+     "#4D4A5D",
+     "#958080",
+     "#C4B59F",
+     "#E5E6C7",
+     "#FFFFFF"
+    ],
+    "sky": [
+     "#1a0d18",
+     "#313148",
+     "#586B90",
+     "#9FBBCB",
+     "#C6EEFD",
+     "#FFFFFF"
+    ],
+    "slate": [
+     "#1d131e",
+     "#31313E",
+     "#4A5057",
+     "#818B8B",
+     "#B3AFA1",
+     "#E5E6C7"
+    ],
+    "gray": [
+     "#0e0e18",
+     "#201E2B",
+     "#373340",
+     "#585561",
+     "#797580",
+     "#A2A0A4"
+    ],
+    "black": [
+     "#000000",
+     "#101414",
+     "#1C2222",
+     "#22282A",
+     "#2A3034",
+     "#4A5057"
+    ],
+    "charcoal": [
+     "#000000",
+     "#130D14",
+     "#1C2222",
+     "#2A3034",
+     "#4A5057",
+     "#6E7675"
+    ]
+   }
+  }
+ },
+ "credits": [
+  {
+   "file": "body/bodies/male",
+   "authors": [
+    "bluecarrot16",
+    "JaidynReiman",
+    "Benjamin K. Smith (BenCreating)",
+    "Evert",
+    "Eliza Wyatt (ElizaWy)",
+    "TheraHedwig",
+    "MuffinElZangano",
+    "Durrani",
+    "Johannes Sjölund (wulax)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+    "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+    "https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle",
+    "https://opengameart.org/content/lpc-revised-character-basics",
+    "https://opengameart.org/content/lpc-be-seated",
+    "https://opengameart.org/content/lpc-runcycle-for-male-muscular-and-pregnant-character-bases-with-modular-heads",
+    "https://opengameart.org/content/lpc-jump-expanded",
+    "https://opengameart.org/content/lpc-character-bases"
+   ],
+   "notes": "see details at https://opengameart.org/content/lpc-character-bases; 'Thick' Male Revised Run/Climb by JaidynReiman (based on ElizaWy's LPC Revised)",
+   "usedBy": [
+    "Body Color"
+   ]
+  },
+  {
+   "file": "body/bodies/female",
+   "authors": [
+    "Benjamin K. Smith (BenCreating)",
+    "bluecarrot16",
+    "TheraHedwig",
+    "Evert",
+    "MuffinElZangano",
+    "Durrani",
+    "Pierre Vigier (pvigier)",
+    "ElizaWy",
+    "Matthew Krohn (makrohn)",
+    "Johannes Sjölund (wulax)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+    "https://opengameart.org/content/lpc-ladies",
+    "https://opengameart.org/content/lpc-7-womens-shirts",
+    "https://opengameart.org/content/lpc-jump-expanded",
+    "https://opengameart.org/content/lpc-be-seated",
+    "https://opengameart.org/content/lpc-revised-character-basics",
+    "https://gitlab.com/vagabondgame/lpc-characters",
+    "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+    "https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle"
+   ],
+   "notes": "see details at https://opengameart.org/content/lpc-character-bases",
+   "usedBy": [
+    "Body Color"
+   ]
+  },
+  {
+   "file": "body/bodies/teen",
+   "authors": [
+    "bluecarrot16",
+    "Evert",
+    "TheraHedwig",
+    "Benjamin K. Smith (BenCreating)",
+    "MuffinElZangano",
+    "Durrani",
+    "Pierre Vigier (pvigier)",
+    "Eliza Wyatt (ElizaWy)",
+    "Matthew Krohn (makrohn)",
+    "Johannes Sjölund (wulax)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+    "https://opengameart.org/content/lpc-ladies",
+    "https://opengameart.org/content/lpc-teen-unisex-base-clothes",
+    "https://opengameart.org/content/lpc-jump-expanded",
+    "https://opengameart.org/content/lpc-revised-character-basics",
+    "https://opengameart.org/content/lpc-be-seated",
+    "https://gitlab.com/vagabondgame/lpc-characters",
+    "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+    "https://opengameart.org/content/lpc-jump-expanded"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Body Color"
+   ]
+  },
+  {
+   "file": "head/heads/human/female",
+   "authors": [
+    "bluecarrot16",
+    "Benjamin K. Smith (BenCreating)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/",
+    "https://opengameart.org/content/lpc-character-bases"
+   ],
+   "notes": "original head by Redshrike, tweaks by BenCreating, modular version by bluecarrot16",
+   "usedBy": [
+    "Human Female"
+   ]
+  },
+  {
+   "file": "head/heads/human/male",
+   "authors": [
+    "bluecarrot16",
+    "Benjamin K. Smith (BenCreating)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-character-bases"
+   ],
+   "notes": "original head by Redshrike, tweaks by BenCreating, modular version by bluecarrot16",
+   "usedBy": [
+    "Human Male"
+   ]
+  },
+  {
+   "file": "head/heads/human/female_elderly",
+   "authors": [
+    "Benjamin K. Smith (BenCreating)",
+    "Eliza Wyatt (ElizaWy)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-revised-elders",
+    "https://opengameart.org/content/lpc-character-bases"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Human Female Elderly"
+   ]
+  },
+  {
+   "file": "hair/long",
+   "authors": [
+    "JaidynReiman",
+    "Manuel Riecke (MrBeast)"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-expanded-hair"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Long"
+   ]
+  },
+  {
+   "file": "hair/bob",
+   "authors": [
+    "ElizaWy",
+    "bluecarrot16"
+   ],
+   "licenses": [
+    "CC0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-hair",
+    "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+   ],
+   "notes": "Original by bluecarrot16. Edited and animated by ElizaWy.",
+   "usedBy": [
+    "Bob"
+   ]
+  },
+  {
+   "file": "hair/plain",
+   "authors": [
+    "JaidynReiman",
+    "Manuel Riecke (MrBeast)",
+    "Joe White"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/ponytail-and-plain-hairstyles",
+    "https://opengameart.org/content/lpc-expanded-hair"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Plain"
+   ]
+  },
+  {
+   "file": "hair/messy1",
+   "authors": [
+    "JaidynReiman",
+    "Manuel Riecke (MrBeast)"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-expanded-hair"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Messy1"
+   ]
+  },
+  {
+   "file": "hair/bangs_bun",
+   "authors": [
+    "ElizaWy",
+    "bluecarrot16"
+   ],
+   "licenses": [
+    "CC0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-hair",
+    "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+   ],
+   "notes": "Original by bluecarrot16, animated by ElizaWy.",
+   "usedBy": [
+    "Bangs bun"
+   ]
+  },
+  {
+   "file": "beards/mustache/handlebar",
+   "authors": [
+    "ElizaWy"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Handlebar Mustache"
+   ]
+  },
+  {
+   "file": "torso/clothes/shortsleeve/tshirt",
+   "authors": [
+    "ElizaWy",
+    "JaidynReiman",
+    "Stephen Challener (Redshrike)",
+    "Johannes Sjölund (wulax)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-revised-character-basics",
+    "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+    "https://opengameart.org/content/lpc-expanded-simple-shirts"
+   ],
+   "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+   "usedBy": [
+    "TShirt"
+   ]
+  },
+  {
+   "file": "torso/clothes/shortsleeve/shortsleeve_polo",
+   "authors": [
+    "ElizaWy",
+    "JaidynReiman",
+    "Stephen Challener (Redshrike)",
+    "Johannes Sjölund (wulax)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "http://opengameart.org/content/lpc-revised-character-basics",
+    "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+    "https://opengameart.org/content/lpc-expanded-simple-shirts"
+   ],
+   "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+   "usedBy": [
+    "Shortsleeve Polo"
+   ]
+  },
+  {
+   "file": "torso/clothes/longsleeve/longsleeve2_cardigan",
+   "authors": [
+    "ElizaWy",
+    "JaidynReiman",
+    "Stephen Challener (Redshrike)",
+    "Johannes Sjölund (wulax)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "http://opengameart.org/content/lpc-revised-character-basics",
+    "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+    "https://opengameart.org/content/lpc-expanded-simple-shirts"
+   ],
+   "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+   "usedBy": [
+    "Cardigan"
+   ]
+  },
+  {
+   "file": "torso/clothes/longsleeve/longsleeve/male",
+   "authors": [
+    "JaidynReiman",
+    "Johannes Sjölund (wulax)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+    "http://opengameart.org/content/lpc-clothing-updates",
+    "https://opengameart.org/content/lpc-revised-character-basics",
+    "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+    "https://opengameart.org/content/lpc-expanded-simple-shirts"
+   ],
+   "notes": "original by wulax; tweaks and further recolors by bluecarrot16; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+   "usedBy": [
+    "Longsleeve"
+   ]
+  },
+  {
+   "file": "torso/clothes/longsleeve/longsleeve/female",
+   "authors": [
+    "bluecarrot16",
+    "ElizaWy",
+    "JaidynReiman",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-7-womens-shirts",
+    "http://opengameart.org/content/lpc-clothing-updates",
+    "https://opengameart.org/content/lpc-revised-character-basics",
+    "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+    "https://opengameart.org/content/lpc-expanded-simple-shirts"
+   ],
+   "notes": "original by ElizaWy, edited to v3 bases by bluecarrot16; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+   "usedBy": [
+    "Longsleeve"
+   ]
+  },
+  {
+   "file": "torso/clothes/longsleeve/longsleeve/teen",
+   "authors": [
+    "bluecarrot16",
+    "ElizaWy",
+    "JaidynReiman",
+    "Stephen Challener (Redshrike)",
+    "Johannes Sjölund (wulax)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-teen-unisex-base-clothes",
+    "http://opengameart.org/content/lpc-clothing-updates",
+    "https://opengameart.org/content/lpc-revised-character-basics",
+    "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+    "https://opengameart.org/content/lpc-expanded-simple-shirts"
+   ],
+   "notes": "body by Redshrike, shirt by ElizaWy derived from base, edited by bluecarrot16 to v3 bases; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+   "usedBy": [
+    "Longsleeve"
+   ]
+  },
+  {
+   "file": "neck/tie/necktie",
+   "authors": [
+    "JaidynReiman",
+    "bluecarrot16",
+    "Thane Brimhall (pennomi)",
+    "laetissima",
+    "Makrohn"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-2-characters",
+    "https://opengameart.org/content/lpc-gentleman"
+   ],
+   "notes": "Originally by pennomi/laetissima/Makrohn, edited by bluecarrot16, animations and recolors by JaidynReiman",
+   "usedBy": [
+    "Necktie"
+   ]
+  },
+  {
+   "file": "neck/tie/bowtie",
+   "authors": [
+    "JaidynReiman",
+    "bluecarrot16",
+    "Thane Brimhall (pennomi)",
+    "laetissima",
+    "Makrohn"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-2-characters",
+    "https://opengameart.org/content/lpc-gentleman"
+   ],
+   "notes": "Originally by pennomi/laetissima/Makrohn, edited by bluecarrot16, recolors by JaidynReiman",
+   "usedBy": [
+    "Bowtie"
+   ]
+  },
+  {
+   "file": "torso/waist/belt_leather",
+   "authors": [
+    "bluecarrot16",
+    "Johannes Sjölund (wulax)",
+    "Matthew Krohn (makrohn)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-combat-armor-for-women",
+    "https://opengameart.org/content/lpc-pirates"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Leather Belt"
+   ]
+  },
+  {
+   "file": "torso/aprons/suspenders",
+   "authors": [
+    "ElizaWy",
+    "JaidynReiman"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+   ],
+   "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/combat adapted from original by JaidynReiman",
+   "usedBy": [
+    "Suspenders"
+   ]
+  },
+  {
+   "file": "shoulders/epaulets",
+   "authors": [
+    "bluecarrot16",
+    "JaidynReiman"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-pirates"
+   ],
+   "notes": "Original by bluecarrot16, jump/run/sit/emote/revised combat frames and female by JaidynReiman",
+   "usedBy": [
+    "Epaulets"
+   ]
+  },
+  {
+   "file": "arms/wrists/cuffs",
+   "authors": [
+    "bluecarrot16",
+    "JaidynReiman"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-pirates"
+   ],
+   "notes": "Original by bluecarrot16, climb/jump/sit/emote/run by JaidynReiman",
+   "usedBy": [
+    "Cuffs"
+   ]
+  },
+  {
+   "file": "arms/wrists/cuffs/thin",
+   "authors": [
+    "bluecarrot16",
+    "JaidynReiman"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-pirates"
+   ],
+   "notes": "Original by bluecarrot16, female/teen version by JaidynReiman",
+   "usedBy": [
+    "Cuffs"
+   ]
+  },
+  {
+   "file": "legs/pants/male",
+   "authors": [
+    "bluecarrot16",
+    "JaidynReiman",
+    "ElizaWy",
+    "Matthew Krohn (makrohn)",
+    "Johannes Sjölund (wulax)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "GPL 3.0",
+    "CC-BY-SA 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+    "https://opengameart.org/content/lpc-expanded-pants"
+   ],
+   "notes": "original male pants by wulax, recolors and edits to v3 base by bluecarrot16, climb/jump/run/sit/emotes/revised combat by JaidynReiman based on ElizaWy's LPC Revised",
+   "usedBy": [
+    "Pants"
+   ]
+  },
+  {
+   "file": "legs/pants/thin",
+   "authors": [
+    "bluecarrot16",
+    "JaidynReiman",
+    "ElizaWy",
+    "Joe White",
+    "Matthew Krohn (makrohn)",
+    "Johannes Sjölund (wulax)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "GPL 3.0",
+    "CC-BY-SA 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+    "http://opengameart.org/content/lpc-clothing-updates",
+    "https://opengameart.org/content/lpc-expanded-pants"
+   ],
+   "notes": "original male pants by wulax, edited for female by Joe White, recolors and edits to v3 base by bluecarrot16, teen legs by ElizaWy derived from base, climb/jump/run/sit/emotes/revised combat by JaidynReiman based on ElizaWy's LPC Revised",
+   "usedBy": [
+    "Pants"
+   ]
+  },
+  {
+   "file": "legs/formal",
+   "authors": [
+    "bluecarrot16",
+    "JaidynReiman",
+    "ElizaWy",
+    "Johannes Sjölund (wulax)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+    "https://opengameart.org/content/lpc-2-characters",
+    "https://opengameart.org/content/lpc-gentleman",
+    "https://opengameart.org/content/lpc-expanded-pants"
+   ],
+   "notes": "Original pants by Stephen Challener (Redshrike), thrust/shoot bases by Wulax, Formal Pants by Bluecarrot16, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+   "usedBy": [
+    "Formal Pants"
+   ]
+  },
+  {
+   "file": "feet/shoes",
+   "authors": [
+    "JaidynReiman",
+    "bluecarrot16",
+    "Johannes Sjölund (wulax)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+    "http://opengameart.org/content/lpc-clothing-updates",
+    "https://opengameart.org/content/lpc-expanded-socks-shoes"
+   ],
+   "notes": "original by wulax, edited for v3 base by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+   "usedBy": [
+    "Basic Shoes"
+   ]
+  },
+  {
+   "file": "feet/shoes/basic/thin",
+   "authors": [
+    "JaidynReiman",
+    "Joe White",
+    "Johannes Sjölund (wulax)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+    "http://opengameart.org/content/lpc-clothing-updates",
+    "https://opengameart.org/content/lpc-expanded-socks-shoes"
+   ],
+   "notes": "original by wulax, edited for female base by Joe White, edited for v3 base by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+   "usedBy": [
+    "Basic Shoes"
+   ]
+  },
+  {
+   "file": "legs/shorts/shorts",
+   "authors": [
+    "ElizaWy",
+    "JaidynReiman",
+    "Johannes Sjölund (wulax)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+    "https://opengameart.org/content/lpc-expanded-pants"
+   ],
+   "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original shorts by ElizaWy, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+   "usedBy": [
+    "Shorts"
+   ]
+  },
+  {
+   "file": "legs/skirts/straight",
+   "authors": [
+    "bluecarrot16",
+    "ElizaWy"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "http://opengameart.org/content/lpc-clothing-updates"
+   ],
+   "notes": "original skirt by ElizaWy, extended to all animation frames and edited for v3 bases by bluecarrot16",
+   "usedBy": [
+    "Straight skirt"
+   ]
+  },
+  {
+   "file": "legs/cuffed",
+   "authors": [
+    "ElizaWy",
+    "JaidynReiman",
+    "Johannes Sjölund (wulax)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+    "https://opengameart.org/content/lpc-expanded-pants"
+   ],
+   "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original cuffed pants by ElizaWy, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+   "usedBy": [
+    "Cuffed Pants"
+   ]
+  },
+  {
+   "file": "legs/leggings",
+   "authors": [
+    "bluecarrot16",
+    "ElizaWy",
+    "JaidynReiman",
+    "Mandi Paugh",
+    "William.Thompsonj",
+    "Johannes Sjölund (wulax)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "http://opengameart.org/content/sara-wizard",
+    "https://opengameart.org/content/lpc-sara",
+    "https://opengameart.org/content/lpc-expanded-pants"
+   ],
+   "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, adapted from sara's leggings to v3 bases by bluecarrot16, jump/run/sit by JaidynReiman based on ElizaWy's and modified to match",
+   "usedBy": [
+    "Leggings"
+   ]
+  },
+  {
+   "file": "legs/formal_striped",
+   "authors": [
+    "bluecarrot16",
+    "JaidynReiman",
+    "ElizaWy",
+    "Johannes Sjölund (wulax)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+    "https://opengameart.org/content/lpc-2-characters",
+    "https://opengameart.org/content/lpc-gentleman",
+    "https://opengameart.org/content/lpc-expanded-pants"
+   ],
+   "notes": "Original pants by Stephen Challener (Redshrike), thrust/shoot bases by Wulax, Striped Formal Pants by Bluecarrot16, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+   "usedBy": [
+    "Striped Formal Pants"
+   ]
+  },
+  {
+   "file": "legs/formal_striped/thin",
+   "authors": [
+    "bluecarrot16",
+    "JaidynReiman",
+    "ElizaWy",
+    "Johannes Sjölund (wulax)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+    "https://opengameart.org/content/lpc-2-characters",
+    "https://opengameart.org/content/lpc-gentleman",
+    "https://opengameart.org/content/lpc-expanded-pants"
+   ],
+   "notes": "Original pants by Stephen Challener (Redshrike), thrust/shoot bases by Wulax, Striped Formal Pants by Bluecarrot16, Female/Thin version by JaidynReiman",
+   "usedBy": [
+    "Striped Formal Pants"
+   ]
+  },
+  {
+   "file": "feet/shoes/revised",
+   "authors": [
+    "ElizaWy",
+    "JaidynReiman"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+    "https://opengameart.org/content/lpc-expanded-socks-shoes"
+   ],
+   "notes": "original by ElizaWy, remaining frames by JaidynReiman",
+   "usedBy": [
+    "Revised Shoes"
+   ]
+  },
+  {
+   "file": "feet/sandals",
+   "authors": [
+    "Nila122",
+    "JaidynReiman",
+    "Matthew Krohn (makrohn)",
+    "Johannes Sjölund (wulax)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 2.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-roman-armor",
+    "http://opengameart.org/content/lpc-clothing-updates",
+    "https://opengameart.org/content/lpc-expanded-socks-shoes"
+   ],
+   "notes": "edited for v3 bases by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+   "usedBy": [
+    "Sandals"
+   ]
+  },
+  {
+   "file": "feet/socks/high",
+   "authors": [
+    "ElizaWy",
+    "JaidynReiman"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+    "https://opengameart.org/content/lpc-expanded-socks-shoes"
+   ],
+   "notes": "original by ElizaWy, remaining frames by JaidynReiman",
+   "usedBy": [
+    "High Socks"
+   ]
+  },
+  {
+   "file": "feet/boots/fold",
+   "authors": [
+    "JaidynReiman"
+   ],
+   "licenses": [
+    "OGA-BY 3.0+",
+    "CC-BY 3.0+",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-kimono-relm",
+    "https://opengameart.org/content/lpc-expanded-socks-shoes"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Folded Rim Boots"
+   ]
+  },
+  {
+   "file": "feet/boots/rimmed",
+   "authors": [
+    "JaidynReiman"
+   ],
+   "licenses": [
+    "OGA-BY 3.0+",
+    "CC-BY 3.0+",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-kimono-relm",
+    "https://opengameart.org/content/lpc-expanded-socks-shoes"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Rimmed Boots"
+   ]
+  },
+  {
+   "file": "feet/boots/basic",
+   "authors": [
+    "JaidynReiman",
+    "bluecarrot16",
+    "Nila122"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 2.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-clothes-and-hair",
+    "https://opengameart.org/content/lpc-expanded-socks-shoes"
+   ],
+   "notes": "original by Nila122, edited for male and v3 bases by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+   "usedBy": [
+    "Basic Boots"
+   ]
+  },
+  {
+   "file": "feet/boots/basic/thin",
+   "authors": [
+    "JaidynReiman",
+    "bluecarrot16",
+    "Nila122"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 2.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-clothes-and-hair",
+    "https://opengameart.org/content/lpc-expanded-socks-shoes"
+   ],
+   "notes": "original by Nila122, edited for v3 bases by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+   "usedBy": [
+    "Basic Boots"
+   ]
+  },
+  {
+   "file": "torso/aprons/apron",
+   "authors": [
+    "Nila122"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 2.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-aprons"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Apron"
+   ]
+  },
+  {
+   "file": "facial/glasses/round",
+   "authors": [
+    "bluecarrot16",
+    "Thane Brimhall (pennomi)",
+    "laetissima"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/clothing-facial-features-and-ui-elements",
+    "https://opengameart.org/content/lpc-gentleman"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Round Glasses"
+   ]
+  },
+  {
+   "file": "cape/solid/fg",
+   "authors": [
+    "bluecarrot16",
+    "JaidynReiman"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more",
+    "https://opengameart.org/content/lpc-roman-armor",
+    "http://opengameart.org/content/lpc-clothing-updates"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Solid"
+   ]
+  },
+  {
+   "file": "cape/solid/bg",
+   "authors": [
+    "Nila122",
+    "JaidynReiman"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more",
+    "https://opengameart.org/content/lpc-roman-armor"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Solid"
+   ]
+  },
+  {
+   "file": "torso/clothes/vest",
+   "authors": [
+    "bluecarrot16",
+    "Thane Brimhall (pennomi)",
+    "laetissima",
+    "Stephen Challener (Redshrike)",
+    "Johannes Sjölund (wulax)"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-2-characters",
+    "https://opengameart.org/content/lpc-gentleman",
+    "https://opengameart.org/content/lpc-pirates"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Vest"
+   ]
+  },
+  {
+   "file": "torso/clothes/vest/male/gray_striped.png",
+   "authors": [
+    "Michael Whitlock (bigbeargames)",
+    "bluecarrot16",
+    "Thane Brimhall (pennomi)",
+    "laetissima"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-2-characters"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Vest"
+   ]
+  },
+  {
+   "file": "torso/clothes/vest/male/gray.png",
+   "authors": [
+    "Michael Whitlock (bigbeargames)",
+    "bluecarrot16",
+    "Thane Brimhall (pennomi)",
+    "laetissima"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-2-characters"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Vest"
+   ]
+  },
+  {
+   "file": "hat/formal/tophat",
+   "authors": [
+    "bluecarrot16"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-gentleman",
+    "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Formal Tophat"
+   ]
+  },
+  {
+   "file": "facial/monocle",
+   "authors": [
+    "bluecarrot16",
+    "Thane Brimhall (pennomi)",
+    "laetissima"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/clothing-facial-features-and-ui-elements",
+    "https://opengameart.org/content/lpc-gentleman",
+    "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Right Monocle"
+   ]
+  },
+  {
+   "file": "facial/glasses/nerd",
+   "authors": [
+    "JaidynReiman",
+    "Thane Brimhall (pennomi)",
+    "laetissima"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-base-character-expressions"
+   ],
+   "notes": "Original by Pennomi, repositioning and recolors by JaidynReiman.",
+   "usedBy": [
+    "Nerd Glasses"
+   ]
+  },
+  {
+   "file": "facial/glasses/sunglasses",
+   "authors": [
+    "Michael Whitlock (bigbeargames)",
+    "Thane Brimhall (pennomi)",
+    "laetissima"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-base-character-expressions",
+    "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Sunglasses"
+   ]
+  },
+  {
+   "file": "facial/glasses/shades",
+   "authors": [
+    "JaidynReiman",
+    "Thane Brimhall (pennomi)",
+    "laetissima"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-base-character-expressions"
+   ],
+   "notes": "Original by Pennomi, repositioning and recolors by JaidynReiman.",
+   "usedBy": [
+    "Shades"
+   ]
+  },
+  {
+   "file": "hair/afro",
+   "authors": [
+    "bluecarrot16"
+   ],
+   "licenses": [
+    "CC0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-hair"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Afro"
+   ]
+  },
+  {
+   "file": "hair/natural",
+   "authors": [
+    "ElizaWy",
+    "bluecarrot16"
+   ],
+   "licenses": [
+    "CC0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-hair",
+    "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+   ],
+   "notes": "Original by bluecarrot16, animations by ElizaWy.",
+   "usedBy": [
+    "Natural"
+   ]
+  },
+  {
+   "file": "hair/cornrows",
+   "authors": [
+    "ElizaWy",
+    "bluecarrot16"
+   ],
+   "licenses": [
+    "CC0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-hair",
+    "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+   ],
+   "notes": "Original by bluecarrot16, animated by ElizaWy.",
+   "usedBy": [
+    "Cornrows"
+   ]
+  },
+  {
+   "file": "hair/twists_straight",
+   "authors": [
+    "bluecarrot16"
+   ],
+   "licenses": [
+    "CC0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-hair"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Twists straight"
+   ]
+  },
+  {
+   "file": "hair/dreadlocks_long",
+   "authors": [
+    "bluecarrot16"
+   ],
+   "licenses": [
+    "CC0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-hair"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Dreadlocks long"
+   ]
+  },
+  {
+   "file": "hair/curly_short",
+   "authors": [
+    "ElizaWy"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-hair",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Curly short"
+   ]
+  },
+  {
+   "file": "hair/curly_long",
+   "authors": [
+    "ElizaWy"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-hair"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Curly long"
+   ]
+  },
+  {
+   "file": "hair/braid",
+   "authors": [
+    "Nila122",
+    "ElizaWy"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0",
+    "GPL 2.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/3-hairs-for-lpc",
+    "https://opengameart.org/content/lpc-hair"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Braid"
+   ]
+  },
+  {
+   "file": "hair/ponytail",
+   "authors": [
+    "JaidynReiman",
+    "Manuel Riecke (MrBeast)"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+    "https://opengameart.org/content/lpc-expanded-hair"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Ponytail"
+   ]
+  },
+  {
+   "file": "hair/spiked",
+   "authors": [
+    "kcilds/Rocetti/Eredah"
+   ],
+   "licenses": [
+    "CC-BY 4.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/eredah-rpg-character-base-48x64-ongoing",
+    "https://opengameart.org/content/lpc-hair"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Spiked"
+   ]
+  },
+  {
+   "file": "torso/clothes/sleeveless/sleeveless2_buttoned",
+   "authors": [
+    "ElizaWy",
+    "JaidynReiman",
+    "Stephen Challener (Redshrike)",
+    "Johannes Sjölund (wulax)"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "http://opengameart.org/content/lpc-revised-character-basics",
+    "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+    "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+    "https://opengameart.org/content/lpc-expanded-simple-shirts"
+   ],
+   "notes": "original by ElizaWy; sleeveless adapted from original by JaidynReiman",
+   "usedBy": [
+    "Sleeveless 2 Buttoned"
+   ]
+  },
+  {
+   "file": "hat/cloth/bandana",
+   "authors": [
+    "Matthew Krohn (makrohn)",
+    "JaidynReiman",
+    "Marcel van de Steeg (MadMarcel)",
+    "JaidynReiman"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle",
+    "https://github.com/makrohn/Universal-LPC-spritesheet/commit/f50007cb47c235d8896cafae7a613f0b6a9a09a8?short_path=02b86d4#diff-02b86d45789a3e3e8e79519c7d17d15c9e6ecc9b4ddecb1bcd8dfbbaef430b75",
+    "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Bandana"
+   ]
+  },
+  {
+   "file": "hat/headband/thick",
+   "authors": [
+    "JaidynReiman"
+   ],
+   "licenses": [
+    "OGA-BY 3.0+",
+    "CC-BY 3.0+",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-relm-hair-xlong-ponytail",
+    "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Thick Headband"
+   ]
+  },
+  {
+   "file": "neck/scarf",
+   "authors": [
+    "Nila122",
+    "JaidynReiman",
+    "Johannes Sjölund (wulax)",
+    "Stephen Challener (Redshrike)"
+   ],
+   "licenses": [
+    "OGA-SA 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 2.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/more-lpc-clothes-and-hair"
+   ],
+   "notes": "Original by Nila122, climb/sit/emote/jump/run animations by JaidynReiman",
+   "usedBy": [
+    "Scarf"
+   ]
+  },
+  {
+   "file": "hat/cloth/leather_cap",
+   "authors": [
+    "Johannes Sjölund (wulax)",
+    "Matthew Krohn (Makrohn)",
+    "JaidynReiman"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+    "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+   ],
+   "notes": "original by Johannes Sjölund (wulax), female by Matthew Krohn, mapped to all frames w/recolors by JaidynReiman",
+   "usedBy": [
+    "Leather Cap"
+   ]
+  },
+  {
+   "file": "hat/formal/bowler",
+   "authors": [
+    "bluecarrot16"
+   ],
+   "licenses": [
+    "CC-BY-SA 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-gentleman",
+    "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Formal Bowler Hat"
+   ]
+  },
+  {
+   "file": "hat/pirate/tricorne",
+   "authors": [
+    "bluecarrot16"
+   ],
+   "licenses": [
+    "OGA-BY 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-pirates",
+    "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+   ],
+   "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+   "usedBy": [
+    "Tricorne"
+   ]
+  },
+  {
+   "file": "facial/patches/eyepatch",
+   "authors": [
+    "bluecarrot16"
+   ],
+   "licenses": [
+    "OGA-BY 3.0",
+    "GPL 3.0"
+   ],
+   "urls": [
+    "https://opengameart.org/content/lpc-pirates",
+    "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+   ],
+   "notes": "",
+   "usedBy": [
+    "Eyepatch Right"
+   ]
+  }
+ ]
+}

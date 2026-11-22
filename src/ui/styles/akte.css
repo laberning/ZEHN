@@ -1,0 +1,125 @@
+/* Agentenakte: Kopf im Papier-Look mit Stempel, Kennzahl-Kacheln, Verlaufsdiagramm */
+
+.akte-head {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #e9dfc4;
+  color: #2b2418;
+  border-radius: 8px;
+  padding: 18px;
+  margin: 10px 0 18px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+}
+.akte-head > div {
+  flex: 1;
+  min-width: 0; /* schmale Fenster: der Name darf umbrechen, statt die Seite zu verbreitern */
+}
+.akte-head h1 {
+  color: #2b2418;
+  text-shadow: none;
+  margin: 4px 0;
+}
+.akte-head .xp-label span {
+  color: #5c5240;
+}
+.akte-head .xp-label b {
+  color: #1d6b3d;
+}
+.stamp {
+  display: inline-block;
+  margin: 0;
+  font-family: var(--pixel);
+  color: #b3202e;
+  border: 2px solid #b3202e;
+  padding: 2px 8px;
+  transform: rotate(-4deg);
+  font-size: 0.8rem;
+}
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+.tile {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.tile b {
+  font-family: var(--pixel);
+  font-size: 1.6rem;
+  color: var(--cyan);
+}
+.tile small {
+  color: var(--muted);
+}
+.chart {
+  width: 100%;
+  max-width: 700px;
+  background: var(--panel);
+  border-radius: 12px;
+}
+.chart .grid {
+  stroke: var(--line);
+}
+.chart .tick {
+  fill: var(--muted);
+  font-size: 11px;
+}
+.chart .line {
+  fill: none;
+  stroke: var(--cyan);
+  stroke-width: 2.5;
+}
+.chart .dot {
+  fill: var(--cyan);
+}
+
+/* Wärmekarte: Legende und Liste */
+.heat-legend {
+  max-width: 860px;
+  margin: 10px auto 0;
+}
+.heat-bar {
+  height: 12px;
+  border-radius: 6px;
+}
+.heat-marks {
+  position: relative;
+  height: 1.3em;
+  margin-top: 4px;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+}
+.heat-marks span {
+  position: absolute;
+}
+.heat-notes {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.heat-swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  vertical-align: -2px;
+  border-radius: 3px;
+  background: #10152a;
+  border: 1px solid #1d2644;
+}
+.heat-swatch.measuring {
+  background: #141b30;
+  border: 1px dashed #6b7aa6;
+}
+.shaky {
+  max-width: 860px;
+  margin: 8px auto 0;
+  font-weight: 700;
+}

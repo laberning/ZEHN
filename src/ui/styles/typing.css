@@ -1,0 +1,226 @@
+/* Tippansicht: Übungstext mit Zeichenzuständen, Monitor und Tisch-Tastatur */
+
+.typing {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.typing-head {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--pixel);
+  font-size: 0.85rem;
+}
+.frame {
+  color: var(--green);
+}
+.live {
+  color: var(--muted);
+}
+.text {
+  font-family: var(--mono);
+  font-size: 30px;
+  line-height: 1.7;
+  background: #070b14;
+  border: 1px solid var(--line);
+  box-shadow: inset 0 0 30px rgba(46, 230, 255, 0.06);
+  padding: 18px 22px;
+  border-radius: 12px;
+  margin: 0;
+  word-break: break-word;
+  /* mindestens zwei Zeilen; darunter schrumpft das Feld nicht (siehe „Tippphase“) */
+  min-height: calc(2 * 1.7em + 40px);
+  /* Rahmen und Innenabstand liegen außen, gerollt wird im Rollbereich darin (useTextScroll) */
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+}
+/* Rollbereich: zeigt so viele ganze Zeilen, wie Platz ist; die Schreibmarke bleibt samt der nächsten Zeile sichtbar.
+   position: relative, damit offsetTop der Schreibmarke sich auf ihn bezieht. Ist unten eine Zeile angeschnitten, blendet sie aus.
+   Seitlich 2 px Innenabstand (und gleich viel negativer Rand, damit der Text nicht wandert): Der Rahmen der Schreibmarke
+   ragt 1 px über das Zeichen hinaus und würde am Zeilenanfang und -ende sonst abgeschnitten. */
+.text-scroll {
+  display: block;
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+  padding-inline: 2px;
+  margin-inline: -2px;
+}
+.text-scroll[data-cut='true'] {
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 0.9em), transparent);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .text-scroll {
+    scroll-behavior: smooth;
+  }
+}
+.ch {
+  border-radius: 3px;
+  transition: color 0.1s;
+}
+.ch.pending {
+  color: #6f7fa6;
+}
+.ch.correct {
+  color: var(--green);
+}
+.ch.corrected {
+  color: var(--yellow);
+}
+.ch.wrong {
+  color: var(--red);
+  text-decoration: underline wavy;
+}
+.ch.space.pending {
+  background: radial-gradient(circle at 50% 58%, rgba(131, 146, 184, 0.55) 2.5px, transparent 3px);
+}
+.ch.cursor {
+  color: #fff;
+  background: rgba(46, 230, 255, 0.28);
+  box-shadow: 0 0 0 1px var(--cyan);
+  animation: blink 1s steps(2) infinite;
+}
+.hint {
+  text-align: center;
+  color: var(--muted);
+  margin: 0;
+  min-height: 1.4em;
+}
+
+/* Monitor und Tisch */
+.monitor {
+  background: #1b1f2b;
+  border: 3px solid #2c3242;
+  border-radius: 18px;
+  padding: 12px 16px 10px;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 2px #11141d;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /* darf schrumpfen, wenn der Platz fehlt: das Textfeld gibt nach */
+  flex: 0 1 auto;
+  min-height: 0;
+}
+.monitor .text {
+  border: 2px solid #0a0d14;
+  box-shadow:
+    inset 0 0 40px rgba(46, 230, 255, 0.08),
+    0 0 18px rgba(46, 230, 255, 0.08);
+}
+.monitor .hint {
+  color: #b9c6e6;
+}
+/* Zeile an der Stelle der Tastatur: die Umstellung gilt erst ab der nächsten Runde */
+.desk-notice {
+  flex: none;
+  margin: 8px 0 0;
+  padding: 8px 12px;
+  border: 1px dashed var(--yellow);
+  border-radius: 8px;
+  color: var(--yellow);
+  text-align: center;
+}
+.desk-keyboard {
+  margin-top: 8px;
+  flex: none;
+}
+
+/* Tippphase (Übung, Einsatz, Tippstunde): Die Tastatur ist fest, der Text gibt nach. Der Bildschirm ist so hoch wie das
+   Fenster; Kopf, Siegel, Hinweiszeile und Tastatur nehmen sich ihren Platz, das Textfeld bekommt den Rest und rollt mit.
+   Kurze Texte sehen aus wie vorher: Monitor und Tastatur stehen oben, darunter bleibt leer. */
+.screen-side {
+  display: contents; /* untereinander: der Wrapper ist unsichtbar; nur die Seitenleiste (unten) macht daraus eine Spalte */
+}
+.typing-phase {
+  height: 100vh;
+  height: 100dvh; /* Rückfall davor für Browser ohne dvh; der Build lässt ihn weg, weil alle Zielbrowser dvh kennen */
+  display: flex;
+  flex-direction: column;
+}
+.typing-phase > .screen-side > * {
+  flex: none;
+}
+.typing-phase > .screen-side > .back-btn {
+  align-self: flex-start;
+}
+.typing-phase > .typing {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin-top: 0;
+}
+.desk-keyboard .keyboard {
+  background: linear-gradient(180deg, #232a3f, #161b2b);
+  border: 2px solid #0b0f1c;
+  border-bottom-width: 8px;
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.55);
+}
+
+/* Wenig Höhe oder schmales Fenster (Tablet hochkant): Übungstext und Abstände kleiner, fließend nach Fensterhöhe
+   und -breite; schmal bricht der Text sonst in viele hohe Zeilen um und schiebt die Tastatur aus dem Bild.
+   Ab 760 px Höhe und 1100 px Breite bleibt alles wie am großen Monitor. */
+@media (max-height: 759px), (max-width: 1099px) {
+  .typing {
+    gap: 6px;
+    margin-top: 6px;
+  }
+  .text {
+    font-size: clamp(18px, min(3.4vh, 3.2vw), 30px);
+    line-height: 1.5;
+    min-height: calc(2 * 1.5em + 20px);
+    padding: 8px 16px;
+  }
+  .monitor {
+    padding: 8px 12px 6px;
+    gap: 4px;
+    border-radius: 14px;
+  }
+  .hint {
+    min-height: 1.2em;
+    font-size: 0.9rem;
+  }
+}
+
+/* Schmal (Handy): ohnehin scrollbar – die Seite wächst mit dem Inhalt, der Text rollt in einem Feld von begrenzter Höhe */
+@media (max-width: 599px) {
+  .typing-phase {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+  .typing-phase > .typing {
+    flex: none;
+  }
+  .text {
+    max-height: 45vh;
+    max-height: 45dvh;
+  }
+}
+
+/* Quer und niedrig (Tablet quer, kleiner Laptop, Handy quer): Seitenleiste links mit Kopf, Story-Objekt, Siegeln und
+   Krümels Hinweis (im Einsatz Baron, Ziel, Zeitbalken, Firewall), rechts Text und Tastatur. Die Breite ist übrig, die Höhe knapp. */
+@media (max-height: 759px) and (min-aspect-ratio: 5/4) and (min-width: 700px) {
+  .screen.with-side {
+    max-width: 1300px; /* die rechte Spalte bleibt so breit wie sonst die ganze Seite */
+    display: grid;
+    grid-template-columns: minmax(200px, 260px) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    gap: 14px;
+  }
+  .with-side > .screen-side {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 0;
+    position: relative; /* sonst ragen absolut gesetzte Teile (sr-only) aus der Leiste und verlängern die Seite */
+    overflow-y: auto; /* nur Sicherung: die Leiste ist so gebaut, dass sie passt */
+  }
+  .with-side > .typing {
+    grid-column: 2;
+    min-height: 0;
+  }
+}

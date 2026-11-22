@@ -1,0 +1,212 @@
+/* Spielhalle: Kopf mit Bestwert, HUD, Buchstabenregen (Arena, Tropfen, Laser) und Tresorknacker */
+
+.arcade-top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.arcade-top h1 {
+  flex: 1;
+  margin: 0 0 10px;
+}
+.arcade-best {
+  font-family: var(--pixel);
+  color: var(--muted);
+}
+.arcade-best b {
+  color: var(--yellow);
+}
+.arcade-hud {
+  display: flex;
+  justify-content: space-around;
+  font-family: var(--pixel);
+  padding: 10px 16px;
+  margin-bottom: 10px;
+}
+.arcade-hud b {
+  color: var(--cyan);
+  font-size: 1.2rem;
+}
+.arcade-hud em {
+  color: var(--yellow);
+  font-style: normal;
+}
+.arcade-hud .lives {
+  color: var(--red);
+  letter-spacing: 4px;
+}
+.arcade-stage {
+  position: relative;
+}
+.arcade-keys {
+  margin-top: 12px;
+}
+.arcade-keys .keyboard {
+  max-width: 720px;
+}
+.arcade-overlay {
+  position: absolute;
+  inset: 8% 12% auto;
+  z-index: 5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+.arcade-intro p {
+  margin: 4px 0;
+}
+.regen-arena {
+  position: relative;
+  /* Platz für die Bildschirmtastatur darunter */
+  height: clamp(300px, calc(100vh - 470px), 62vh);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 63, 180, 0.35);
+  background: linear-gradient(180deg, rgba(18, 6, 12, 0.55), rgba(10, 14, 25, 0.75));
+  overflow: hidden;
+  transition: box-shadow 0.15s;
+}
+.regen-arena.miss {
+  box-shadow: inset 0 0 40px rgba(255, 90, 106, 0.5);
+}
+.drop {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  font-family: var(--mono);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(20, 28, 49, 0.9);
+  border: 2px solid var(--magenta);
+  border-radius: 10px;
+  padding: 2px 10px;
+  white-space: nowrap;
+  box-shadow: 0 0 14px rgba(255, 63, 180, 0.4);
+}
+.drop.target {
+  border-color: var(--cyan);
+  box-shadow: 0 0 18px rgba(46, 230, 255, 0.6);
+}
+.drop .done {
+  color: var(--green);
+}
+.laser {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.laser line {
+  stroke: var(--cyan);
+  stroke-width: 0.6;
+  filter: drop-shadow(0 0 2px var(--cyan));
+}
+.grundnetz {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--cyan), var(--green), var(--cyan));
+  box-shadow: 0 0 18px var(--cyan);
+}
+.regen-kruemel {
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50%);
+}
+.tresor-arena {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  min-height: 420px;
+}
+.vault {
+  display: block;
+  filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.6));
+  transition: filter 0.4s;
+}
+.vault.open {
+  filter: drop-shadow(0 0 30px rgba(255, 216, 77, 0.7));
+}
+.code {
+  font-family: var(--mono);
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  background: #070b14;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 24px;
+}
+.code span {
+  color: #8392b8;
+}
+.code span.ok {
+  color: var(--green);
+}
+.code span.next {
+  color: #fff;
+  border-bottom: 3px solid var(--cyan);
+}
+.code.shake {
+  animation: shake-code 0.3s;
+  border-color: var(--red);
+}
+.tresor-arena .timer {
+  width: min(520px, 90%);
+}
+.level-pick {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.medal {
+  font-family: var(--pixel);
+  font-size: 0.8rem;
+}
+.medal.none {
+  color: var(--muted);
+}
+.medal.bronze {
+  color: #d9894a;
+}
+.medal.silber {
+  color: #c3cbe0;
+}
+.medal.gold {
+  color: #ffd84d;
+}
+.arcade-cheer {
+  position: absolute;
+  inset: 30% 10% auto;
+  z-index: 4;
+  text-align: center;
+  font-family: var(--pixel);
+  font-size: 1.6rem;
+  color: #ffd84d;
+  text-shadow: 0 2px 0 #000;
+  pointer-events: none;
+  animation: cheer-pop 0.4s ease-out;
+}
+@keyframes cheer-pop {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .arcade-cheer {
+    animation: none;
+  }
+}

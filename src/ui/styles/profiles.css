@@ -1,0 +1,431 @@
+/* Profile: Startbildschirm mit Logo, Profilauswahl, Rekrutierung, Avatar-Editor, Dienstausweis */
+
+.logo {
+  font-size: 4rem;
+  margin: 24px 0 0;
+  letter-spacing: 0.3em;
+}
+.tagline {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-family: var(--pixel);
+}
+.pitch {
+  margin: 0 0 24px;
+  font-size: 1.15rem;
+}
+
+/* Startseite: ruhige Fläche vor der Backstube, damit Schild und Regale die Schrift nicht stören */
+.screen.start {
+  max-width: 760px;
+  margin: 16px auto;
+  padding: 8px 24px 20px;
+  background: color-mix(in srgb, var(--bg) 86%, transparent);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  backdrop-filter: blur(3px);
+}
+
+/* Startseite ohne Akten: Tastenreihe mit verschwindendem F, Überschrift, Krümels Zeile, Absatz zur Geschichte, drei Chips */
+.start-keys {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  /* Platz über den Kappen für den schräg hängenden Zettel, damit er die Unterzeile nicht verdeckt */
+  margin: 30px 0 6px;
+}
+.start-key {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  font-family: var(--pixel);
+  font-size: 1.2rem;
+}
+.start-gap {
+  width: 18px;
+}
+/* das F: leere gestrichelte Kappe, der Buchstabe blendet ruhig aus und wieder ein (aus bei reduzierter Bewegung, base.css) */
+.start-key.gone {
+  border-style: dashed;
+  color: transparent;
+  animation: start-fade 2.4s ease-in-out infinite alternate;
+}
+@keyframes start-fade {
+  from {
+    color: var(--text);
+  }
+  to {
+    color: transparent;
+  }
+}
+/* Zettel des Diebs im Goldrand-Stil */
+.start-note {
+  position: absolute;
+  top: -26px;
+  padding: 2px 5px;
+  background: #f3e6c4;
+  color: #3a2a10;
+  border: 2px double #b8902e;
+  border-radius: 3px;
+  font-family: Georgia, serif;
+  font-size: 0.62rem;
+  white-space: nowrap;
+  transform: rotate(-6deg);
+}
+.start-headline {
+  margin: 18px 0 8px;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+/* Krümels Funk-Zeile unter der Überschrift: Absender klein in Magenta wie im Funk-Hinweis des HQ */
+.start-kruemel {
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+.start-kruemel small {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 1px 8px;
+  border: 1px solid var(--magenta);
+  border-radius: 999px;
+  color: var(--magenta);
+  font-size: 0.75rem;
+  vertical-align: middle;
+}
+.start-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0 22px;
+  padding: 0;
+  list-style: none;
+}
+.start-chips li {
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  font-size: 0.95rem;
+}
+@media (max-width: 520px) {
+  .start-keys {
+    gap: 4px;
+  }
+  .start-key {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+  .start-gap {
+    width: 10px;
+  }
+  .start-headline {
+    font-size: 1.25rem;
+  }
+  /* nur ohne Akten: kleineres Logo, damit alles ohne Scrollen passt; die Profilauswahl bleibt wie bisher */
+  .start.first .logo {
+    font-size: 3rem;
+    margin-top: 12px;
+  }
+}
+
+/* Profilauswahl */
+.profile-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin: 24px 0;
+}
+.profile-card {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 10px;
+  background: var(--panel);
+}
+.profile-card:hover {
+  box-shadow: 0 0 18px rgba(46, 230, 255, 0.25);
+}
+.profile-card small {
+  color: var(--muted);
+}
+.profile-card.new {
+  justify-content: center;
+  border-style: dashed;
+}
+.plus {
+  font-size: 3rem;
+  color: var(--cyan);
+  line-height: 1;
+}
+
+/* Rekrutierung und Avatar-Editor */
+.create {
+  display: grid;
+  /* Figur links (bleibt beim Scrollen stehen), Auswahl mit Reitern rechts */
+  grid-template-columns: 280px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 18px 20px;
+  backdrop-filter: blur(3px);
+}
+.avatar-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.editor-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 12px;
+}
+/* Teile als Bildkacheln: die eigene Figur mit genau diesem Teil */
+.tiles-pick {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+  gap: 8px;
+}
+.tile-pick {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 4px;
+  border-radius: 10px;
+}
+.tile-pick.sel {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 2px var(--cyan);
+}
+.tile-pic {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  background: #0b1020;
+  border-radius: 6px;
+}
+.tile-pick.locked .tile-pic canvas {
+  filter: brightness(0) opacity(0.6);
+}
+.tile-name {
+  font-size: 0.78rem;
+  line-height: 1.2;
+  text-align: center;
+}
+.tile-pick .new-pill {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+.tile-warn {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  color: var(--yellow);
+  font-weight: 700;
+}
+.swatch.locked-swatch {
+  display: grid;
+  place-items: center;
+  opacity: 0.45;
+}
+.swatch.warn,
+.tile-pick.warn {
+  outline: 2px dashed var(--yellow);
+  outline-offset: 1px;
+}
+.tab-mark {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background: var(--magenta);
+  vertical-align: middle;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.field-label {
+  font-family: var(--pixel);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.swatches {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.swatch {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border-radius: 0;
+  border: 2px solid #12151f;
+}
+.swatch.sel {
+  border-color: #fff;
+  box-shadow: 0 0 0 2px var(--cyan);
+}
+.create-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  position: sticky;
+  top: 16px;
+}
+/* Der Zurück-Knopf steht über der Kulisse: eigener Grund, damit er lesbar bleibt */
+.create-preview button.quiet {
+  background: var(--panel);
+}
+
+/* Figur drehen: zwei kleine Pfeilknöpfe unter der Figur */
+.turn-buttons {
+  display: flex;
+  gap: 8px;
+  margin: 2px 0 6px;
+}
+.turn-buttons button {
+  min-width: 40px;
+  padding: 4px 10px;
+  line-height: 1;
+}
+
+/* Spiegel in der Garderobe: Silberrahmen statt Ausweis */
+.id-card.mirror {
+  border: 4px solid #9aa3b8;
+  box-shadow:
+    inset 0 0 0 2px #5b6378,
+    0 0 0 2px #2a3044;
+  background: linear-gradient(160deg, #22325a, #121a30 55%, #1c2a4a);
+}
+.id-card.mirror .id-head {
+  color: #c9d1e3;
+  text-align: center;
+}
+
+/* Dienstausweis */
+.id-card {
+  width: 100%;
+  background: #141d3c;
+  border: 1px solid var(--cyan);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 0 24px rgba(46, 230, 255, 0.18);
+}
+.id-head {
+  font-family: var(--pixel);
+  font-size: 0.75rem;
+  color: var(--cyan);
+  align-self: stretch;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 760px) {
+  .create {
+    grid-template-columns: 1fr;
+  }
+  /* schmal: Figur oben, nicht klebend – sonst schiebt sich die Auswahl darüber */
+  .create-preview {
+    position: static;
+  }
+}
+
+/* Spielende: Startbildschirm-Stil, dazu die Verabschiedung von Krümel und Ada */
+.end-story {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 18px;
+  display: grid;
+  gap: 10px;
+  text-align: left;
+}
+.end-story li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+}
+
+/* Startseite: Nebenaktionen unten und Verwaltungsmodus der Akten */
+.start-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 14px 0;
+}
+.profile-card.managing {
+  cursor: default;
+  border-style: dashed;
+}
+.profile-card.managing .row {
+  margin-top: 6px;
+}
+.profile-card.managing button {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+}
+
+/* Rückfrage vor dem Löschen einer Akte */
+.confirm-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex; /* mit margin:auto am Fenster: mittig, und bei wenig Höhe rollt der Grund, ohne dass oben etwas abgeschnitten wird */
+  padding: 16px;
+  overflow-y: auto;
+  background: rgba(5, 8, 16, 0.78);
+}
+.confirm-panel {
+  width: min(460px, 100%);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.confirm-panel h2,
+.confirm-panel p {
+  margin: 0;
+}
+.confirm-panel .row {
+  justify-content: center;
+}
+.confirm-panel .field {
+  width: 100%;
+}

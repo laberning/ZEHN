@@ -1,0 +1,43 @@
+name: Rückmeldung zum Spiel
+description: Du bist bis zum Ende gekommen, eine Stelle ist unklar oder langweilig, oder dir hat etwas besonders gefallen.
+title: "Rückmeldung: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Schön, dass du uns schreibst! Schreib auf Deutsch, so wie du magst.
+
+        **Bitte schick uns keine Spielstände und keine persönlichen Daten** (keinen echten Namen, keine Adresse, keine Fotos). Wenn wir etwas aus deiner Akte brauchen, fragen wir nach.
+  - type: dropdown
+    id: worum
+    attributes:
+      label: Worum geht es?
+      options:
+        - Ich bin bis zum Ende gekommen
+        - Eine Stelle ist unklar oder langweilig
+        - Etwas hat mir besonders gefallen
+        - Etwas anderes
+    validations:
+      required: true
+  - type: dropdown
+    id: akt
+    attributes:
+      label: Wie weit bist du gekommen?
+      options:
+        - Akt 1 – Grundreihe
+        - Akt 2 – Obere Reihe
+        - Akt 3 – Untere Reihe
+        - Akt 4 – Großschreibung
+        - Akt 5 – Satzzeichen
+        - Akt 6 – Zahlen
+        - Akt 7 – Sonderzeichen und Finale
+        - Geschichte fertig, jetzt in der Tippstunde
+    validations:
+      required: false
+  - type: textarea
+    id: erzaehl
+    attributes:
+      label: Erzähl uns mehr
+      description: Ein Satz im Funk, ein Auftrag, der zu lange dauert, eine Taste, die nie sitzen will, oder was dir gefallen hat.
+    validations:
+      required: true
