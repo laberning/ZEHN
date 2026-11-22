@@ -8,7 +8,7 @@ Diese Datei gilt für alle, die am Projekt arbeiten – Menschen und KI-Agenten.
 
 ## Sprache
 
-- Spieltexte und Dokumentation: **Deutsch**. Bezeichner im Code: **Englisch**. Code-Kommentare: Deutsch oder Englisch. Commit-Nachrichten: **Englisch** nach Conventional Commits (`feat:`, `fix:`, `docs:`, `test:`, `refactor:`, `chore:`, `build:`), Betreff unter etwa 72 Zeichen, im Text das Warum; keine KI-Autor- oder Co-Autor-Zeilen.
+- Spieltexte und Dokumentation: **Deutsch**. Bezeichner im Code: **Englisch**. Code-Kommentare: Deutsch oder Englisch. Commit-Nachrichten: **Deutsch** nach Conventional Commits (ADR-0008): Typ englisch (`feat:`, `fix:`, `docs:`, `test:`, `refactor:`, `chore:`, `build:`, `ci:`), Betreff und Text deutsch, Betreff unter etwa 72 Zeichen, im Text das Warum; keine KI-Autor- oder Co-Autor-Zeilen.
 - Spieltexte sind für 10-Jährige: kurz, humorvoll, ohne Fachbegriffe. Keine Gewalt; der Baron ist ein eitler Meisterdieb.
 - Programmiersprache: **nur TypeScript** – auch Skripte (`scripts/`) und Konfigurationen (`*.config.ts`); kein `.js`, `.mjs` oder `.cjs`. Node 26 führt `.ts` direkt aus (`node scripts/lpc/build.ts`), ESLint lädt seine Konfiguration über `jiti`.
 
@@ -133,7 +133,7 @@ Jede Regel steht an einer Stelle. Vor dem Hinzufügen von Code im [Wegweiser](do
 5. Doku ist aktuell (Architektur bei Strukturänderungen, Spieler-Doku bei sichtbaren Änderungen, Testrunden in `docs/design/feedback.md`).
 6. Jede neue Entscheidung hat ein ADR; geänderte Entscheidungen ersetzen ihr ADR.
 7. Änderungen an gespeicherten Profilen sind migriert und getestet; generierte Dateien sind nur über ihr Skript entstanden.
-8. Commit mit englischer Conventional-Commits-Nachricht, die das Warum erklärt.
+8. Commit mit deutscher Conventional-Commits-Nachricht (Typ wie `feat:` englisch), die das Warum erklärt.
 
 ## Fallstricke
 

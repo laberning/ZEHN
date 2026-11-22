@@ -2,7 +2,7 @@
 id: ADR-0001
 status: accepted
 date: 2026-11-01
-superseded_by: null
+superseded_by: ADR-0008 (teilweise: Sprache der Commit-Nachrichten)
 ---
 # ADR-0001: Repository, Planung und Commits
 
